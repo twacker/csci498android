@@ -4,16 +4,14 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.graphics.Typeface;
 import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.RadioGroup;
-import android.widget.RadioButton;
+import android.widget.*;
+import java.util.*;
 
 public class LunchList extends Activity {
 	
-	Restaurant r = new Restaurant();
+	List<Restaurant> model = new ArrayList<Restaurant>();
+	ArrayAdapter<Restaurant> adapter=null;
 	
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,7 +23,12 @@ public class LunchList extends Activity {
         
 		RadioGroup types = (RadioGroup) findViewById(R.id.types);
 		setRadioButtons(types);
+		
+		ListView list = (ListView) findViewById(R.id.restaurants);
         
+		adapter = new ArrayAdapter<Restaurant> (this, android.R.layout.simple_list_item_1, model);
+		list.setAdapter(adapter);
+		
         save.setOnClickListener(onSave);
     }
 
@@ -33,6 +36,7 @@ public class LunchList extends Activity {
 		
 		@Override
 		public void onClick(View v) {
+			Restaurant r = new Restaurant();
 			EditText name = (EditText) findViewById(R.id.name);
 			EditText address = (EditText) findViewById(R.id.addr);
 			RadioGroup types = (RadioGroup) findViewById(R.id.types);
@@ -42,11 +46,13 @@ public class LunchList extends Activity {
 			r.setAddress(address.getText().toString());
 			r.setType(rb.getText().toString());
 			
+			adapter.add(r);
+			
 		}
 	};
 	
 	public void setRadioButtons( RadioGroup rg ){
-		String[] types = {"Sit Down", "Fast Food", "Food Cart", "Take Out", "Delivery", "Coffie Shop", "Desserts", "Bar", "Grill", "Vending Machine", "Grocery Store"};
+		String[] types = {"Sit Down", "Fast Food", "Food Cart"};//, "Take Out", "Delivery", "Coffie Shop", "Desserts", "Bar", "Grill", "Vending Machine", "Grocery Store"};
 		for(int i = 0; i < types.length; i ++){
 			RadioButton rb = new RadioButton(this);
         	rb.setText(types[i]);		
