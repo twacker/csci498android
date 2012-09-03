@@ -2,6 +2,7 @@ package apt.tutorial;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.graphics.Typeface;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
@@ -18,6 +19,8 @@ public class LunchList extends Activity {
         setContentView(R.layout.activity_lunch_list);
         
         Button save = (Button) findViewById(R.id.save);
+        Typeface face = Typeface.createFromAsset(getAssets(), "Chantelli_Antiqua.ttf");
+        save.setTypeface(face);
         
         save.setOnClickListener(onSave);
     }
