@@ -24,7 +24,7 @@ public class LunchList extends Activity {
 		RadioGroup types = (RadioGroup) findViewById(R.id.types);
 		setRadioButtons(types);
 		
-		ListView list = (ListView) findViewById(R.id.restaurants);
+		Spinner list = (Spinner) findViewById(R.id.restaurants);
         
 		adapter = new ArrayAdapter<Restaurant> (this, android.R.layout.simple_list_item_1, model);
 		list.setAdapter(adapter);
@@ -38,7 +38,7 @@ public class LunchList extends Activity {
 		public void onClick(View v) {
 			Restaurant r = new Restaurant();
 			EditText name = (EditText) findViewById(R.id.name);
-			EditText address = (EditText) findViewById(R.id.addr);
+			AutoCompleteTextView address = (AutoCompleteTextView) findViewById(R.id.addr);
 			RadioGroup types = (RadioGroup) findViewById(R.id.types);
 			RadioButton rb = (RadioButton) findViewById(types.getCheckedRadioButtonId());
 			
@@ -48,15 +48,39 @@ public class LunchList extends Activity {
 			
 			adapter.add(r);
 			
+			resetDropDownList(address);		
+			
 		}
 	};
 	
+	public void resetDropDownList(AutoCompleteTextView addr){
+		
+		String[] addrs = getKnownAddresses();
+		ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_dropdown_item_1line, addrs);
+		addr.setAdapter(adapter);
+		
+	}
+	
 	public void setRadioButtons( RadioGroup rg ){
-		String[] types = {"Sit Down", "Fast Food", "Food Cart"};//, "Take Out", "Delivery", "Coffie Shop", "Desserts", "Bar", "Grill", "Vending Machine", "Grocery Store"};
+		String[] types = {"Sit Down", "Fast Food", "Food Cart"};//, "Take Out", "Delivery", "Coffee Shop", "Desserts", "Bar", "Grill", "Vending Machine", "Grocery Store"};
 		for(int i = 0; i < types.length; i ++){
 			RadioButton rb = new RadioButton(this);
         	rb.setText(types[i]);		
         	rg.addView(rb);
 		}
+	}
+	
+	public String[] getKnownAddresses(){
+		ArrayList<String> addrs = new ArrayList<String>();
+		for(Restaurant r : model){
+			if(!addrs.contains(r.getAddress())){
+				addrs.add(r.getAddress());
+			}
+		}
+		String[] addrs_array = new String[addrs.size()];
+		for(int i = 0; i < addrs.size(); i ++){
+			addrs_array[i] = addrs.get(i);
+		}
+		return addrs_array;
 	}
 }
