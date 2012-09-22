@@ -8,132 +8,143 @@ import android.widget.*;
 import java.util.*;
 
 public class LunchList extends Activity {
-	
+
 	List<Restaurant> model = new ArrayList<Restaurant>();
-	RestaurantAdapter adapter=null;
-	
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lunch_list);
-        
-        Button save = (Button) findViewById(R.id.save);
-        Typeface face = Typeface.createFromAsset(getAssets(), "Chantelli_Antiqua.ttf");
-        save.setTypeface(face);
-        
+	RestaurantAdapter adapter = null;
+
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_lunch_list);
+
+		Button save = (Button) findViewById(R.id.save);
+		Typeface face = Typeface.createFromAsset(getAssets(),
+				"Chantelli_Antiqua.ttf");
+		save.setTypeface(face);
+
 		RadioGroup types = (RadioGroup) findViewById(R.id.types);
 		setRadioButtons(types);
-		
+
 		Spinner list = (Spinner) findViewById(R.id.restaurants);
-        
+
 		adapter = new RestaurantAdapter();
 		list.setAdapter(adapter);
-		
-        save.setOnClickListener(onSave);
-    }
 
-    private View.OnClickListener onSave = new View.OnClickListener() {
-		
-		@Override
-		public void onClick(View v) {
+		save.setOnClickListener(onSave);
+	}
+
+	private View.OnClickListener onSave = new View.OnClickListener() {
+
+		// eclipse doesn't like @Override 
+		public void onClick( View v ) {
 			Restaurant r = new Restaurant();
 			EditText name = (EditText) findViewById(R.id.name);
 			AutoCompleteTextView address = (AutoCompleteTextView) findViewById(R.id.addr);
 			RadioGroup types = (RadioGroup) findViewById(R.id.types);
-			RadioButton rb = (RadioButton) findViewById(types.getCheckedRadioButtonId());
-			
+			RadioButton rb = (RadioButton) findViewById(types
+					.getCheckedRadioButtonId());
+
 			r.setName(name.getText().toString());
 			r.setAddress(address.getText().toString());
 			r.setType(rb.getText().toString());
-			
+
 			adapter.add(r);
-			
-			resetDropDownList(address);		
-			
+
+			resetDropDownList(address);
+
 		}
 	};
-	
-	public void resetDropDownList(AutoCompleteTextView addr){
-		
+
+	public void resetDropDownList(AutoCompleteTextView addr) {
+
 		String[] addrs = getKnownAddresses();
-		ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_dropdown_item_1line, addrs);
+		ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
+				android.R.layout.simple_dropdown_item_1line, addrs);
 		addr.setAdapter(adapter);
-		
+
 	}
-	
-	public void setRadioButtons( RadioGroup rg ){
-		String[] types = {"Sit Down", "Fast Food", "Food Cart"};//, "Take Out", "Delivery", "Coffee Shop", "Desserts", "Bar", "Grill", "Vending Machine", "Grocery Store"};
-		for(int i = 0; i < types.length; i ++){
+
+	public void setRadioButtons(RadioGroup rg) {
+		String[] types = { "Sit Down", "Fast Food", "Food Cart" };// ,
+																	// "Take Out",
+																	// "Delivery",
+																	// "Coffee Shop",
+																	// "Desserts",
+																	// "Bar",
+																	// "Grill",
+																	// "Vending Machine",
+																	// "Grocery Store"};
+		for (int i = 0; i < types.length; i++) {
 			RadioButton rb = new RadioButton(this);
-        	rb.setText(types[i]);		
-        	rg.addView(rb);
+			rb.setText(types[i]);
+			rg.addView(rb);
 		}
 	}
-	
-	public String[] getKnownAddresses(){
+
+	public String[] getKnownAddresses() {
 		ArrayList<String> addrs = new ArrayList<String>();
-		for(Restaurant r : model){
-			if(!addrs.contains(r.getAddress())){
+		for (Restaurant r : model) {
+			if (!addrs.contains(r.getAddress())) {
 				addrs.add(r.getAddress());
 			}
 		}
 		String[] addrs_array = new String[addrs.size()];
-		for(int i = 0; i < addrs.size(); i ++){
+		for (int i = 0; i < addrs.size(); i++) {
 			addrs_array[i] = addrs.get(i);
 		}
 		return addrs_array;
 	}
-	
+
 	class RestaurantAdapter extends ArrayAdapter<Restaurant> {
-		
+
 		RestaurantAdapter() {
 			super(LunchList.this, android.R.layout.simple_list_item_1, model);
 		}
-		
+
 		public View getView(int position, View convertView, ViewGroup parent) {
-			
+
 			View row = convertView;
 			RestaurantHolder holder = null;
-			
-			if ( row == null ) {
+
+			if (row == null) {
 				LayoutInflater inflater = getLayoutInflater();
-				row = inflater.inflate(R.layout.row,  parent, false);
+				row = inflater.inflate(R.layout.row, parent, false);
 				holder = new RestaurantHolder(row);
 				row.setTag(holder);
 			} else {
-				holder = (RestaurantHolder)row.getTag();
+				holder = (RestaurantHolder) row.getTag();
 			}
-			
+
 			holder.populateForm(model.get(position));
-			
+
 			return row;
-			
+
 		}
 	}
-	
+
 	static class RestaurantHolder {
 		private TextView name = null;
 		private TextView address = null;
 		private ImageView icon = null;
-		
+
 		RestaurantHolder(View row) {
 			name = (TextView) row.findViewById(R.id.title);
 			address = (TextView) row.findViewById(R.id.address);
 			icon = (ImageView) row.findViewById(R.id.icon);
 		}
-		
+
 		void populateForm(Restaurant r) {
 			name.setText(r.getName());
 			address.setText(r.getAddress());
-			if(r.getType().equals("Sit Down")) {
+			if (r.getType().equals("Sit Down")) {
 				icon.setImageResource(R.drawable.ball_red);
-			} else if(r.getType().equals("Fast Food")) {
+			} else if (r.getType().equals("Fast Food")) {
 				icon.setImageResource(R.drawable.ball_yellow);
 			} else {
 				icon.setImageResource(R.drawable.ball_green);
 			}
 		}
-		
+
 	}
-	
+
 }
