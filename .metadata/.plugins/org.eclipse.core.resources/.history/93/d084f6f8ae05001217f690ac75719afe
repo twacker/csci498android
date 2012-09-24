@@ -41,8 +41,6 @@ public class LunchList extends TabActivity {
 		getTabHost().addTab(spec);
 		getTabHost().setCurrentTab(0);
 	
-		ListView list = (ListView) findViewById(R.id.restaurants);
-		list.setOnItemClickListener(onListClick);
 	}
 
 	private View.OnClickListener onSave = new View.OnClickListener() {
@@ -158,12 +156,5 @@ public class LunchList extends TabActivity {
 		}
 
 	}
-	
-	private AdapterView.OnItemClickListener onListClick = new AdapterView.OnItemClickListener() {
-		public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-			
-		}
-	
-	};
 
 }

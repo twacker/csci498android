@@ -1,0 +1,1614 @@
+!SESSION 2012-09-15 16:25:56.094 -----------------------------------------------
+eclipse.buildId=M20110909-1335
+java.version=1.7.0_02
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -data C:\Users\Dale Anderson\Documents\GitHub\csci498android -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY com.android.ide.eclipse.ddms 4 0 2012-09-15 16:26:07.654
+!MESSAGE DDMS files not found: C:\Users\Dale Anderson\Eclipse\eclipse\platform-tools\adb.exe C:\Users\Dale Anderson\Eclipse\eclipse\tools\hprof-conv.exe C:\Users\Dale Anderson\Eclipse\eclipse\tools\traceview.bat 
+!SESSION 2012-09-21 14:55:31.708 -----------------------------------------------
+eclipse.buildId=M20110909-1335
+java.version=1.7.0_02
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-09-21 15:43:56.077
+!MESSAGE Unable to update index for central|http://repo1.maven.org/maven2
+
+!ENTRY org.eclipse.core.resources 4 4 2012-09-21 15:44:34.016
+!MESSAGE Exception occurred while saving project preferences: /LunchList/.settings/org.eclipse.jdt.core.prefs.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: A resource already exists on disk 'C:\Users\Dale Anderson\Documents\GitHub\csci498android\LunchList\.settings'.
+	at org.eclipse.core.internal.resources.Folder.assertCreateRequirements(Folder.java:47)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:95)
+	at org.eclipse.core.internal.resources.ProjectPreferences$2.run(ProjectPreferences.java:611)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.core.internal.resources.ProjectPreferences.save(ProjectPreferences.java:628)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.flush(EclipsePreferences.java:353)
+	at org.eclipse.core.internal.resources.ProjectPreferences.flush(ProjectPreferences.java:380)
+	at org.eclipse.jdt.internal.core.JavaProject.setOption(JavaProject.java:2936)
+	at com.android.ide.eclipse.adt.internal.project.ProjectHelper.checkAndFixCompilerCompliance(ProjectHelper.java:415)
+	at com.android.ide.eclipse.adt.internal.project.ProjectHelper.fixProjectClasspathEntries(ProjectHelper.java:324)
+	at com.android.ide.eclipse.adt.internal.project.ProjectHelper.fixProject(ProjectHelper.java:242)
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.NewProjectCreator.createEclipseProject(NewProjectCreator.java:645)
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.NewProjectCreator.createProjectAsync(NewProjectCreator.java:469)
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.NewProjectCreator.access$0(NewProjectCreator.java:460)
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.NewProjectCreator$1.execute(NewProjectCreator.java:272)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation$1.run(WorkspaceModifyOperation.java:106)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:118)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+!SUBENTRY 1 org.eclipse.core.resources 4 272 2012-09-21 15:44:34.019
+!MESSAGE A resource already exists on disk 'C:\Users\Dale Anderson\Documents\GitHub\csci498android\LunchList\.settings'.
+
+!ENTRY org.eclipse.core.resources 4 4 2012-09-21 15:44:34.021
+!MESSAGE Exception occurred while saving project preferences: /LunchList/.settings/org.eclipse.jdt.core.prefs.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: A resource already exists on disk 'C:\Users\Dale Anderson\Documents\GitHub\csci498android\LunchList\.settings'.
+	at org.eclipse.core.internal.resources.Folder.assertCreateRequirements(Folder.java:47)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:95)
+	at org.eclipse.core.internal.resources.ProjectPreferences$2.run(ProjectPreferences.java:611)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.core.internal.resources.ProjectPreferences.save(ProjectPreferences.java:628)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.flush(EclipsePreferences.java:353)
+	at org.eclipse.core.internal.resources.ProjectPreferences.flush(ProjectPreferences.java:380)
+	at org.eclipse.jdt.internal.core.JavaProject.setOption(JavaProject.java:2936)
+	at com.android.ide.eclipse.adt.internal.project.ProjectHelper.checkAndFixCompilerCompliance(ProjectHelper.java:417)
+	at com.android.ide.eclipse.adt.internal.project.ProjectHelper.fixProjectClasspathEntries(ProjectHelper.java:324)
+	at com.android.ide.eclipse.adt.internal.project.ProjectHelper.fixProject(ProjectHelper.java:242)
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.NewProjectCreator.createEclipseProject(NewProjectCreator.java:645)
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.NewProjectCreator.createProjectAsync(NewProjectCreator.java:469)
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.NewProjectCreator.access$0(NewProjectCreator.java:460)
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.NewProjectCreator$1.execute(NewProjectCreator.java:272)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation$1.run(WorkspaceModifyOperation.java:106)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:118)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+!SUBENTRY 1 org.eclipse.core.resources 4 272 2012-09-21 15:44:34.021
+!MESSAGE A resource already exists on disk 'C:\Users\Dale Anderson\Documents\GitHub\csci498android\LunchList\.settings'.
+
+!ENTRY org.eclipse.core.resources 4 4 2012-09-21 15:44:34.022
+!MESSAGE Exception occurred while saving project preferences: /LunchList/.settings/org.eclipse.jdt.core.prefs.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: A resource already exists on disk 'C:\Users\Dale Anderson\Documents\GitHub\csci498android\LunchList\.settings'.
+	at org.eclipse.core.internal.resources.Folder.assertCreateRequirements(Folder.java:47)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:95)
+	at org.eclipse.core.internal.resources.ProjectPreferences$2.run(ProjectPreferences.java:611)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.core.internal.resources.ProjectPreferences.save(ProjectPreferences.java:628)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.flush(EclipsePreferences.java:353)
+	at org.eclipse.core.internal.resources.ProjectPreferences.flush(ProjectPreferences.java:380)
+	at org.eclipse.jdt.internal.core.JavaProject.setOption(JavaProject.java:2936)
+	at com.android.ide.eclipse.adt.internal.project.ProjectHelper.checkAndFixCompilerCompliance(ProjectHelper.java:419)
+	at com.android.ide.eclipse.adt.internal.project.ProjectHelper.fixProjectClasspathEntries(ProjectHelper.java:324)
+	at com.android.ide.eclipse.adt.internal.project.ProjectHelper.fixProject(ProjectHelper.java:242)
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.NewProjectCreator.createEclipseProject(NewProjectCreator.java:645)
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.NewProjectCreator.createProjectAsync(NewProjectCreator.java:469)
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.NewProjectCreator.access$0(NewProjectCreator.java:460)
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.NewProjectCreator$1.execute(NewProjectCreator.java:272)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation$1.run(WorkspaceModifyOperation.java:106)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:118)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+!SUBENTRY 1 org.eclipse.core.resources 4 272 2012-09-21 15:44:34.022
+!MESSAGE A resource already exists on disk 'C:\Users\Dale Anderson\Documents\GitHub\csci498android\LunchList\.settings'.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.001
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.001
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.001
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.001
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.001
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.001
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.001
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.001
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.001
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.001
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.001
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.001
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.001
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.001
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.001
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.001
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.001
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.001
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.001
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.001
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.001
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.001
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.001
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.001
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.001
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.001
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.001
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.001
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.001
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.001
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.001
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.001
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.001
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.016
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.016
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.016
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.016
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.016
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.016
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.016
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.016
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.016
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.016
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.016
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.016
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.016
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.016
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.016
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.016
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.016
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.016
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.016
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.016
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.016
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.016
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.016
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.016
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.016
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.016
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.016
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.016
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.016
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.016
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.016
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.016
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.016
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.016
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.016
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.016
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.016
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.016
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.032
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.032
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.032
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.032
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.032
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.032
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.032
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.032
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.032
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.032
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.032
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.032
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.032
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.032
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.032
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.032
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.032
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.032
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.032
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.032
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.032
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.032
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.032
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.032
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.032
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.032
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.032
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.032
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.032
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.032
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.032
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.032
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.032
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.032
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.032
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.032
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.032
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.032
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.032
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.032
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.032
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.032
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.048
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.048
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.048
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.048
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.048
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.048
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.048
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.048
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.048
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.048
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.048
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.048
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.048
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.048
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.048
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.048
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.048
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.048
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.048
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.048
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.048
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.048
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.048
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.048
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.048
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.048
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.048
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.063
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.063
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.063
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.063
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.063
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.063
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.063
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.063
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.063
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.063
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.063
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.063
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.063
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.063
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.063
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.063
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.063
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.063
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.063
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.063
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.063
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.063
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.063
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.063
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.063
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.063
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.063
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.063
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.063
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.063
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.063
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.063
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.063
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.063
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.063
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.063
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.079
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.079
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.079
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.079
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.079
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.079
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.079
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.079
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.094
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.094
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.094
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.094
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.094
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.094
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.094
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.110
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.110
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.110
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.110
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.110
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.110
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.126
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.126
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.126
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.126
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.126
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.126
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.126
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.141
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.141
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.141
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.141
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.141
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.141
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.141
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.157
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.157
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.157
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.157
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.157
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.157
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.157
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.172
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.172
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.172
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.172
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.172
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.172
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.172
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.172
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.172
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.172
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.172
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.172
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.172
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.172
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.188
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.188
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.188
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.188
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.188
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.188
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.188
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.188
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.188
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.188
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.188
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.188
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.188
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.188
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.188
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:31.188
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:32.951
+!MESSAGE palette: Failed to find style 'autoCompleteTextViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:32.998
+!MESSAGE palette: Failed to find style 'autoCompleteTextViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.091
+!MESSAGE palette: Failed to find style 'autoCompleteTextViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.123
+!MESSAGE palette: Failed to find style 'autoCompleteTextViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.123
+!MESSAGE palette: Failed to find style 'autoCompleteTextViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.123
+!MESSAGE palette: Failed to find style 'buttonStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.123
+!MESSAGE palette: Failed to find style 'buttonStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.169
+!MESSAGE palette: Failed to find style 'buttonStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.169
+!MESSAGE palette: Failed to find style 'checkboxStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.169
+!MESSAGE palette: Failed to find style 'checkboxStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.169
+!MESSAGE palette: Failed to find style 'checkboxStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.169
+!MESSAGE palette: Failed to find style 'checkboxStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.185
+!MESSAGE palette: Failed to find style 'textViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.201
+!MESSAGE palette: Failed to find style 'textViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.201
+!MESSAGE palette: Failed to find style 'textViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.247
+!MESSAGE palette: Failed to find style 'editTextStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.247
+!MESSAGE palette: Failed to find style 'editTextStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.247
+!MESSAGE palette: Failed to find style 'editTextStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.247
+!MESSAGE palette: Failed to find style 'editTextStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.247
+!MESSAGE palette: Failed to find style 'editTextStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.263
+!MESSAGE palette: Failed to find style 'editTextStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.263
+!MESSAGE palette: Failed to find style 'editTextStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.263
+!MESSAGE palette: Failed to find style 'editTextStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.263
+!MESSAGE palette: Failed to find style 'editTextStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.263
+!MESSAGE palette: Failed to find style 'editTextStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.263
+!MESSAGE palette: Failed to find style 'editTextStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.263
+!MESSAGE palette: Failed to find style 'editTextStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.263
+!MESSAGE palette: Failed to find style 'editTextStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.263
+!MESSAGE palette: Failed to find style 'editTextStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.263
+!MESSAGE palette: Failed to find style 'editTextStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.263
+!MESSAGE palette: Failed to find style 'editTextStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.263
+!MESSAGE palette: Failed to find style 'editTextStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.263
+!MESSAGE palette: Failed to find style 'editTextStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.263
+!MESSAGE palette: Failed to find style 'editTextStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.263
+!MESSAGE palette: Failed to find style 'editTextStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.263
+!MESSAGE palette: Failed to find style 'editTextStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.263
+!MESSAGE palette: Failed to find style 'editTextStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.279
+!MESSAGE palette: Failed to find style 'editTextStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.279
+!MESSAGE palette: Failed to find style 'editTextStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.279
+!MESSAGE palette: Failed to find style 'editTextStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.279
+!MESSAGE palette: Failed to find style 'editTextStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.279
+!MESSAGE palette: Failed to find style 'editTextStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.279
+!MESSAGE palette: Failed to find style 'editTextStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.279
+!MESSAGE palette: Failed to find style 'editTextStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.279
+!MESSAGE palette: Failed to find style 'editTextStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.279
+!MESSAGE palette: Failed to find style 'editTextStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.279
+!MESSAGE palette: Failed to find style 'editTextStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.279
+!MESSAGE palette: Failed to find style 'editTextStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.279
+!MESSAGE palette: Failed to find style 'editTextStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.279
+!MESSAGE palette: Failed to find style 'editTextStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.279
+!MESSAGE palette: Failed to find style 'editTextStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.279
+!MESSAGE palette: Failed to find style 'editTextStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.279
+!MESSAGE palette: Failed to find style 'editTextStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.294
+!MESSAGE palette: Failed to find style 'editTextStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.294
+!MESSAGE palette: Failed to find style 'textViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.294
+!MESSAGE palette: Failed to find style 'textViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-09-21 16:07:33.294
+!MESSAGE palette: Unable to resolve id "?android:attr/textAppearanceLarge" for attribute "textAppearance"
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.294
+!MESSAGE palette: Failed to find style 'textViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.294
+!MESSAGE palette: Failed to find style 'textViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.294
+!MESSAGE palette: Failed to find style 'textViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-09-21 16:07:33.294
+!MESSAGE palette: Unable to resolve id "?android:attr/textAppearanceMedium" for attribute "textAppearance"
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.294
+!MESSAGE palette: Failed to find style 'textViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.294
+!MESSAGE palette: Failed to find style 'textViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.294
+!MESSAGE palette: Failed to find style 'textViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-09-21 16:07:33.294
+!MESSAGE palette: Unable to resolve id "?android:attr/textAppearanceSmall" for attribute "textAppearance"
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.294
+!MESSAGE palette: Failed to find style 'textViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.310
+!MESSAGE palette: Failed to find style 'imageButtonStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.310
+!MESSAGE palette: Failed to find style 'imageButtonStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.372
+!MESSAGE palette: Failed to find style 'autoCompleteTextViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.372
+!MESSAGE palette: Failed to find style 'autoCompleteTextViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.372
+!MESSAGE palette: Failed to find style 'autoCompleteTextViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.372
+!MESSAGE palette: Failed to find style 'autoCompleteTextViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.372
+!MESSAGE palette: Failed to find style 'autoCompleteTextViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.403
+!MESSAGE palette: Failed to find style 'progressBarStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.403
+!MESSAGE palette: Failed to find style 'progressBarStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.419
+!MESSAGE palette: Failed to find style 'progressBarStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.419
+!MESSAGE palette: Failed to find style 'progressBarStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.435
+!MESSAGE palette: Failed to find style 'progressBarStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.435
+!MESSAGE palette: Failed to find style 'progressBarStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.435
+!MESSAGE palette: Failed to find style 'progressBarStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.435
+!MESSAGE palette: Failed to find style 'progressBarStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.466
+!MESSAGE palette: Failed to find style 'radioButtonStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.466
+!MESSAGE palette: Failed to find style 'radioButtonStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.466
+!MESSAGE palette: Failed to find style 'radioButtonStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.466
+!MESSAGE palette: Failed to find style 'radioButtonStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.497
+!MESSAGE palette: Failed to find style 'ratingBarStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.497
+!MESSAGE palette: Failed to find style 'ratingBarStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.497
+!MESSAGE palette: Failed to find style 'ratingBarStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.497
+!MESSAGE palette: Failed to find style 'ratingBarStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.497
+!MESSAGE palette: Failed to find style 'seekBarStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.497
+!MESSAGE palette: Failed to find style 'seekBarStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.497
+!MESSAGE palette: Failed to find style 'seekBarStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.606
+!MESSAGE palette: Failed to find style 'listViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.606
+!MESSAGE palette: Failed to find style 'listViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.606
+!MESSAGE palette: Failed to find style 'listViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.606
+!MESSAGE palette: Failed to find style 'expandableListViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.606
+!MESSAGE palette: Failed to find style 'expandableListViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.606
+!MESSAGE palette: Failed to find style 'expandableListViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.622
+!MESSAGE palette: Failed to find style 'expandableListViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.622
+!MESSAGE palette: Failed to find style 'spinnerStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.622
+!MESSAGE palette: Failed to find style 'spinnerStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.622
+!MESSAGE palette: Failed to find style 'spinnerStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.622
+!MESSAGE palette: Failed to find style 'textViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.622
+!MESSAGE palette: Failed to find style 'textViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.622
+!MESSAGE palette: Failed to find style 'textViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.622
+!MESSAGE palette: Failed to find style 'buttonStyleToggle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.622
+!MESSAGE palette: Failed to find style 'buttonStyleToggle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.622
+!MESSAGE palette: Failed to find style 'buttonStyleToggle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.637
+!MESSAGE palette: Failed to find style 'buttonStyleToggle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:33.637
+!MESSAGE palette: Failed to find style 'buttonStyleToggle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:34.261
+!MESSAGE palette: Failed to find style 'radioButtonStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:34.261
+!MESSAGE palette: Failed to find style 'radioButtonStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:34.261
+!MESSAGE palette: Failed to find style 'radioButtonStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:34.261
+!MESSAGE palette: Failed to find style 'radioButtonStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:34.261
+!MESSAGE palette: Failed to find style 'radioButtonStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:34.261
+!MESSAGE palette: Failed to find style 'radioButtonStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:34.277
+!MESSAGE palette: Failed to find style 'radioButtonStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:34.277
+!MESSAGE palette: Failed to find style 'radioButtonStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:34.277
+!MESSAGE palette: Failed to find style 'radioButtonStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:34.277
+!MESSAGE palette: Failed to find style 'radioButtonStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:34.277
+!MESSAGE palette: Failed to find style 'radioButtonStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:34.277
+!MESSAGE palette: Failed to find style 'radioButtonStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:34.277
+!MESSAGE palette: Failed to find style 'radioButtonStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:34.683
+!MESSAGE palette: Failed to find style 'textViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:34.683
+!MESSAGE palette: Failed to find style 'textViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:34.683
+!MESSAGE palette: Failed to find style 'textViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-09-21 16:07:34.698
+!MESSAGE palette: "?android:attr/listPreferredItemHeight" in attribute "minHeight" is not a valid format.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:34.698
+!MESSAGE palette: Failed to find style 'textViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:34.714
+!MESSAGE palette: Failed to find style 'textViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-09-21 16:07:34.714
+!MESSAGE palette: Unable to resolve id "?android:attr/textAppearanceLarge" for attribute "textAppearance"
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:34.714
+!MESSAGE palette: Failed to find style 'textViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:34.714
+!MESSAGE palette: Failed to find style 'textViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:34.714
+!MESSAGE palette: Failed to find style 'textViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-09-21 16:07:34.714
+!MESSAGE palette: Unable to resolve id "?android:attr/textAppearanceSmall" for attribute "textAppearance"
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:34.714
+!MESSAGE palette: Failed to find style 'textViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-09-21 16:07:34.714
+!MESSAGE palette: "?android:attr/listPreferredItemHeight" in attribute "minHeight" is not a valid format.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:34.714
+!MESSAGE palette: Failed to find style 'textViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:34.714
+!MESSAGE palette: Failed to find style 'textViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-09-21 16:07:34.714
+!MESSAGE palette: Unable to resolve id "?android:attr/textAppearanceLarge" for attribute "textAppearance"
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:34.714
+!MESSAGE palette: Failed to find style 'textViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:34.714
+!MESSAGE palette: Failed to find style 'textViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:34.714
+!MESSAGE palette: Failed to find style 'textViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-09-21 16:07:34.714
+!MESSAGE palette: Unable to resolve id "?android:attr/textAppearanceSmall" for attribute "textAppearance"
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:34.714
+!MESSAGE palette: Failed to find style 'textViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-09-21 16:07:34.729
+!MESSAGE palette: "?android:attr/expandableListPreferredItemPaddingLeft" in attribute "paddingLeft" is not a valid format.
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-09-21 16:07:34.729
+!MESSAGE palette: You must supply a layout_height attribute.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:34.729
+!MESSAGE palette: Failed to find style 'textViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:34.729
+!MESSAGE palette: Failed to find style 'textViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-09-21 16:07:34.729
+!MESSAGE palette: Unable to resolve id "?android:attr/textAppearanceLarge" for attribute "textAppearance"
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:34.729
+!MESSAGE palette: Failed to find style 'textViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:34.729
+!MESSAGE palette: Failed to find style 'textViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:34.729
+!MESSAGE palette: Failed to find style 'textViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-09-21 16:07:34.729
+!MESSAGE palette: Unable to resolve id "?android:attr/textAppearanceSmall" for attribute "textAppearance"
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:34.729
+!MESSAGE palette: Failed to find style 'textViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-09-21 16:07:34.745
+!MESSAGE palette: "?android:attr/expandableListPreferredItemPaddingLeft" in attribute "paddingLeft" is not a valid format.
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-09-21 16:07:34.745
+!MESSAGE palette: You must supply a layout_height attribute.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:34.745
+!MESSAGE palette: Failed to find style 'textViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:34.745
+!MESSAGE palette: Failed to find style 'textViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-09-21 16:07:34.745
+!MESSAGE palette: Unable to resolve id "?android:attr/textAppearanceLarge" for attribute "textAppearance"
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:34.745
+!MESSAGE palette: Failed to find style 'textViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:34.745
+!MESSAGE palette: Failed to find style 'textViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:34.745
+!MESSAGE palette: Failed to find style 'textViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-09-21 16:07:34.745
+!MESSAGE palette: Unable to resolve id "?android:attr/textAppearanceSmall" for attribute "textAppearance"
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:34.745
+!MESSAGE palette: Failed to find style 'textViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:35.104
+!MESSAGE palette: Failed to find style 'tabWidgetStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:35.104
+!MESSAGE palette: Failed to find style 'tabWidgetStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:35.447
+!MESSAGE palette: Failed to find style 'textViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:35.463
+!MESSAGE palette: Failed to find style 'textViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:35.463
+!MESSAGE palette: Failed to find style 'textViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:35.463
+!MESSAGE palette: Failed to find style 'textViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:35.463
+!MESSAGE palette: Failed to find style 'textViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:35.463
+!MESSAGE palette: Failed to find style 'textViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:35.478
+!MESSAGE palette: Failed to find style 'textViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:35.478
+!MESSAGE palette: Failed to find style 'textViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:35.478
+!MESSAGE palette: Failed to find style 'textViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:35.494
+!MESSAGE palette: Failed to find style 'tabWidgetStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:35.494
+!MESSAGE palette: Failed to find style 'tabWidgetStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:35.494
+!MESSAGE palette: Failed to find style 'textViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:35.494
+!MESSAGE palette: Failed to find style 'textViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:35.494
+!MESSAGE palette: Failed to find style 'textViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:35.728
+!MESSAGE activity_lunch_list.xml: Failed to find style 'textViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:35.728
+!MESSAGE activity_lunch_list.xml: Failed to find style 'textViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:35.728
+!MESSAGE activity_lunch_list.xml: Failed to find style 'textViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:35.728
+!MESSAGE activity_lunch_list.xml: Failed to find style 'editTextStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:35.728
+!MESSAGE activity_lunch_list.xml: Failed to find style 'editTextStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:35.743
+!MESSAGE activity_lunch_list.xml: Failed to find style 'editTextStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:35.743
+!MESSAGE activity_lunch_list.xml: Failed to find style 'textViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:35.743
+!MESSAGE activity_lunch_list.xml: Failed to find style 'textViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:35.743
+!MESSAGE activity_lunch_list.xml: Failed to find style 'textViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:35.743
+!MESSAGE activity_lunch_list.xml: Failed to find style 'autoCompleteTextViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:35.743
+!MESSAGE activity_lunch_list.xml: Failed to find style 'autoCompleteTextViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:35.743
+!MESSAGE activity_lunch_list.xml: Failed to find style 'autoCompleteTextViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:35.743
+!MESSAGE activity_lunch_list.xml: Failed to find style 'autoCompleteTextViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:35.743
+!MESSAGE activity_lunch_list.xml: Failed to find style 'autoCompleteTextViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:35.743
+!MESSAGE activity_lunch_list.xml: Failed to find style 'textViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:35.743
+!MESSAGE activity_lunch_list.xml: Failed to find style 'textViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:35.743
+!MESSAGE activity_lunch_list.xml: Failed to find style 'textViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:35.743
+!MESSAGE activity_lunch_list.xml: Failed to find style 'radioButtonStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:35.743
+!MESSAGE activity_lunch_list.xml: Failed to find style 'buttonStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:35.743
+!MESSAGE activity_lunch_list.xml: Failed to find style 'buttonStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:35.743
+!MESSAGE activity_lunch_list.xml: Failed to find style 'buttonStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:35.759
+!MESSAGE activity_lunch_list.xml: Failed to find style 'spinnerStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:35.759
+!MESSAGE activity_lunch_list.xml: Failed to find style 'spinnerStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:35.759
+!MESSAGE activity_lunch_list.xml: Failed to find style 'spinnerStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2012-09-21 16:07:35.759
+!MESSAGE activity_lunch_list.xml: Couldn't resolve resource @id/details
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:35.759
+!MESSAGE activity_lunch_list.xml: Failed to find style 'textViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:35.759
+!MESSAGE activity_lunch_list.xml: Failed to find style 'textViewStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 16:07:35.759
+!MESSAGE activity_lunch_list.xml: Failed to find style 'textViewStyle' in current theme
+!SESSION 2012-09-22 11:23:48.067 -----------------------------------------------
+eclipse.buildId=M20110909-1335
+java.version=1.7.0_02
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-09-22 11:30:48.673
+!MESSAGE Unable to update index for central|http://repo1.maven.org/maven2
+!SESSION 2012-09-22 11:43:07.618 -----------------------------------------------
+eclipse.buildId=M20110909-1335
+java.version=1.7.0_02
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-09-22 11:43:17.229
+!MESSAGE Unable to update index for central|http://repo1.maven.org/maven2
+
+!ENTRY org.eclipse.ecf.provider.filetransfer 4 0 2012-09-22 11:50:04.094
+!MESSAGE org.eclipse.core.runtime.Status[plugin=org.eclipse.ecf.provider.filetransfer;code=4;message=hardClose;severity4;exception=java.io.IOException: Stream closed;children=[]]
+!STACK 0
+java.io.IOException: Stream closed
+	at java.io.BufferedInputStream.getBufIfOpen(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at org.apache.commons.httpclient.ContentLengthInputStream.read(ContentLengthInputStream.java:170)
+	at org.apache.commons.httpclient.ContentLengthInputStream.read(ContentLengthInputStream.java:184)
+	at org.apache.commons.httpclient.ChunkedInputStream.exhaustInputStream(ChunkedInputStream.java:369)
+	at org.apache.commons.httpclient.ContentLengthInputStream.close(ContentLengthInputStream.java:118)
+	at java.io.FilterInputStream.close(Unknown Source)
+	at org.apache.commons.httpclient.AutoCloseInputStream.notifyWatcher(AutoCloseInputStream.java:194)
+	at org.apache.commons.httpclient.AutoCloseInputStream.close(AutoCloseInputStream.java:158)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.hardClose(AbstractRetrieveFileTransfer.java:331)
+	at org.eclipse.ecf.provider.filetransfer.httpclient.HttpClientRetrieveFileTransfer.hardClose(HttpClientRetrieveFileTransfer.java:396)
+	at org.eclipse.ecf.provider.filetransfer.httpclient.HttpClientRetrieveFileTransfer.cancel(HttpClientRetrieveFileTransfer.java:382)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.handleTransferEvent(FileReader.java:173)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.fireTransferReceiveDataEvent(AbstractRetrieveFileTransfer.java:388)
+	at org.eclipse.ecf.provider.filetransfer.httpclient.HttpClientRetrieveFileTransfer.fireTransferReceiveDataEvent(HttpClientRetrieveFileTransfer.java:1163)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.handleReceivedData(AbstractRetrieveFileTransfer.java:288)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer$1.performFileTransfer(AbstractRetrieveFileTransfer.java:173)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:73)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SESSION 2012-09-22 11:54:32.895 -----------------------------------------------
+eclipse.buildId=M20110909-1335
+java.version=1.7.0_02
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-09-22 11:54:48.211
+!MESSAGE Unable to update index for central|http://repo1.maven.org/maven2
+
+!ENTRY org.eclipse.equinox.security 1 0 2012-09-22 13:16:34.982
+!MESSAGE New keyring password generated. 
+
+!ENTRY org.eclipse.egit.core 4 0 2012-09-22 13:16:35.271
+!MESSAGE An exception occurred during push on URI https://github.com/twacker/csci498android.git: An internal Exception occurred during push: https://github.com/twacker/csci498android.git: not authorized
+!STACK 0
+org.eclipse.jgit.api.errors.JGitInternalException: Exception caught during execution of push command
+	at org.eclipse.jgit.api.PushCommand.call(PushCommand.java:156)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:227)
+	at org.eclipse.egit.ui.internal.push.PushOperationUI.execute(PushOperationUI.java:145)
+	at org.eclipse.egit.ui.internal.push.PushOperationUI$1.run(PushOperationUI.java:202)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.eclipse.jgit.errors.TransportException: https://github.com/twacker/csci498android.git: not authorized
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:446)
+	at org.eclipse.jgit.transport.TransportHttp.openPush(TransportHttp.java:365)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:130)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1120)
+	at org.eclipse.jgit.api.PushCommand.call(PushCommand.java:152)
+	... 4 more
+
+!ENTRY org.eclipse.egit.core 4 0 2012-09-22 13:23:26.523
+!MESSAGE An exception occurred during push on URI https://github.com/twacker/csci498android.git: An internal Exception occurred during push: https://github.com/twacker/csci498android.git: not authorized
+!STACK 0
+org.eclipse.jgit.api.errors.JGitInternalException: Exception caught during execution of push command
+	at org.eclipse.jgit.api.PushCommand.call(PushCommand.java:156)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:194)
+	at org.eclipse.egit.ui.internal.push.ConfirmationPage$2.run(ConfirmationPage.java:205)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+Caused by: org.eclipse.jgit.errors.TransportException: https://github.com/twacker/csci498android.git: not authorized
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:446)
+	at org.eclipse.jgit.transport.TransportHttp.openPush(TransportHttp.java:365)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:130)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1120)
+	at org.eclipse.jgit.api.PushCommand.call(PushCommand.java:152)
+	... 3 more
+!SESSION 2012-09-22 13:26:55.500 -----------------------------------------------
+eclipse.buildId=M20110909-1335
+java.version=1.7.0_02
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-09-22 13:27:07.543
+!MESSAGE Unable to update index for central|http://repo1.maven.org/maven2
+
+!ENTRY org.eclipse.egit.core 4 0 2012-09-22 13:30:01.815
+!MESSAGE An exception occurred during push on URI https://github.com/twacker/csci498android.git: An internal Exception occurred during push: https://github.com/twacker/csci498android.git: not authorized
+!STACK 0
+org.eclipse.jgit.api.errors.JGitInternalException: Exception caught during execution of push command
+	at org.eclipse.jgit.api.PushCommand.call(PushCommand.java:156)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:194)
+	at org.eclipse.egit.ui.internal.push.ConfirmationPage$2.run(ConfirmationPage.java:205)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+Caused by: org.eclipse.jgit.errors.TransportException: https://github.com/twacker/csci498android.git: not authorized
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:446)
+	at org.eclipse.jgit.transport.TransportHttp.openPush(TransportHttp.java:365)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:130)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1120)
+	at org.eclipse.jgit.api.PushCommand.call(PushCommand.java:152)
+	... 3 more
+
+!ENTRY org.eclipse.egit.core 4 0 2012-09-22 13:31:00.568
+!MESSAGE An exception occurred during push on URI https://github.com/twacker/csci498android.git: An internal Exception occurred during push: https://github.com/twacker/csci498android.git: not authorized
+!STACK 0
+org.eclipse.jgit.api.errors.JGitInternalException: Exception caught during execution of push command
+	at org.eclipse.jgit.api.PushCommand.call(PushCommand.java:156)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:194)
+	at org.eclipse.egit.ui.internal.push.ConfirmationPage$2.run(ConfirmationPage.java:205)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+Caused by: org.eclipse.jgit.errors.TransportException: https://github.com/twacker/csci498android.git: not authorized
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:446)
+	at org.eclipse.jgit.transport.TransportHttp.openPush(TransportHttp.java:365)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:130)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1120)
+	at org.eclipse.jgit.api.PushCommand.call(PushCommand.java:152)
+	... 3 more
+
+!ENTRY org.eclipse.egit.core 4 0 2012-09-22 13:31:20.032
+!MESSAGE An exception occurred during push on URI https://github.com/twacker/csci498android.git: An internal Exception occurred during push: https://github.com/twacker/csci498android.git: not authorized
+!STACK 0
+org.eclipse.jgit.api.errors.JGitInternalException: Exception caught during execution of push command
+	at org.eclipse.jgit.api.PushCommand.call(PushCommand.java:156)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:194)
+	at org.eclipse.egit.ui.internal.push.ConfirmationPage$2.run(ConfirmationPage.java:205)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+Caused by: org.eclipse.jgit.errors.TransportException: https://github.com/twacker/csci498android.git: not authorized
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:446)
+	at org.eclipse.jgit.transport.TransportHttp.openPush(TransportHttp.java:365)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:130)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1120)
+	at org.eclipse.jgit.api.PushCommand.call(PushCommand.java:152)
+	... 3 more

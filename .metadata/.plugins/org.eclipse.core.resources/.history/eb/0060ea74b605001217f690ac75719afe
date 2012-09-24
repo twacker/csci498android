@@ -41,7 +41,6 @@ public class LunchList extends TabActivity {
 		getTabHost().addTab(spec);
 		getTabHost().setCurrentTab(0);
 	
-		ListView list = (ListView) findViewById(R.id.restaurants);
 		list.setOnItemClickListener(onListClick);
 	}
 
