@@ -2,4 +2,8 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="android.R"/>
 <fullyQualifiedTypeName name="android.R.layout"/>
+<fullyQualifiedTypeName name="android.widget.TabHost.TabSpec"/>
+<fullyQualifiedTypeName name="apt.tutorial.R.drawable"/>
+<fullyQualifiedTypeName name="android.widget.AdapterView.OnItemClickListener"/>
+<fullyQualifiedTypeName name="apt.tutorial.R.id"/>
 </qualifiedTypeNameHistroy>
