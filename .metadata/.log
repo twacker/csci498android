@@ -1668,3 +1668,23 @@ org.eclipse.core.internal.resources.ResourceException: The project description f
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1386)
 !SUBENTRY 2 org.eclipse.core.resources 4 567 2012-09-26 10:09:29.946
 !MESSAGE The project description file (.project) for 'LunchList' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+!SESSION 2012-09-26 10:24:19.095 -----------------------------------------------
+eclipse.buildId=M20110909-1335
+java.version=1.7.0_02
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-09-26 10:27:08.878
+!MESSAGE Unable to update index for central|http://repo1.maven.org/maven2
+!SESSION 2012-09-28 11:58:26.143 -----------------------------------------------
+eclipse.buildId=M20110909-1335
+java.version=1.7.0_02
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-09-28 12:00:22.224
+!MESSAGE Unable to update index for central|http://repo1.maven.org/maven2
