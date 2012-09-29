@@ -171,6 +171,7 @@ public class LunchList extends TabActivity {
 
 			return true;
 		}
+
 		return super.onOptionsItemSelected( item );
 	}
 
