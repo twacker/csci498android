@@ -1,4 +1,4 @@
-#Sat Sep 29 10:39:24 MDT 2012
+#Sat Sep 29 10:54:16 MDT 2012
 org.eclipse.jdt.core.formatter.insert_space_before_comma_in_for_inits=do not insert
 org.eclipse.jdt.core.formatter.brace_position_for_block=end_of_line
 org.eclipse.jdt.core.formatter.insert_space_after_at_in_annotation_type_declaration=do not insert
@@ -86,7 +86,7 @@ org.eclipse.jdt.core.formatter.put_empty_statement_on_new_line=false
 org.eclipse.jdt.core.formatter.alignment_for_parameters_in_constructor_declaration=16
 org.eclipse.jdt.core.formatter.blank_lines_between_type_declarations=1
 org.eclipse.jdt.core.formatter.insert_space_after_comma_in_multiple_field_declarations=insert
-org.eclipse.jdt.core.formatter.insert_space_after_closing_paren_in_cast=do not insert
+org.eclipse.jdt.core.formatter.insert_space_after_closing_paren_in_cast=insert
 org.eclipse.jdt.core.formatter.brace_position_for_constructor_declaration=end_of_line
 org.eclipse.jdt.core.formatter.insert_new_line_after_opening_brace_in_array_initializer=do not insert
 org.eclipse.jdt.core.formatter.insert_space_before_opening_brace_in_annotation_type_declaration=insert

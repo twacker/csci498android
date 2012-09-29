@@ -55,6 +55,10 @@ public class LunchList extends TabActivity {
 
 		public void onClick( View v ) {
 			Restaurant r = new Restaurant();
+			
+			EditText name = ( EditText ) findViewById( R.id.name );
+			EditText address = ( EditText ) findViewById( R.id.addr );
+			RadioGroup types = ( RadioGroup ) findViewById( R.id.types );
 
 			r.setName( name.getText().toString() );
 			r.setAddress( address.getText().toString() );
