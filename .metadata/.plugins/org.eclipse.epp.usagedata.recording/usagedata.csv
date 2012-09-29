@@ -213,3 +213,19 @@ java.vm.info,sysinfo,,,"mixed mode",1348855115347
 java.vm.name,sysinfo,,,"Java HotSpot(TM) 64-Bit Server VM",1348855115347
 java.vm.specification.name,sysinfo,,,"Java Virtual Machine Specification",1348855115347
 java.vm.specification.vendor,sysinfo,,,"Oracle Corporation",1348855115347
+java.vm.specification.version,sysinfo,,,"1.7",1348855115347
+java.vm.vendor,sysinfo,,,"Oracle Corporation",1348855115347
+java.vm.version,sysinfo,,,"22.0-b10",1348855115347
+started,bundle,org.eclipse.m2e.usagedata,1.0.100.20110804-1717,"org.eclipse.m2e.usagedata",1348855115362
+started,bundle,com.android.ide.eclipse.adt,16.0.1.v201112150204-238534,"com.android.ide.eclipse.adt",1348855115393
+started,bundle,org.eclipse.wb.discovery.ui,1.1.0.r37x201109091028,"org.eclipse.wb.discovery.ui",1348855115752
+started,bundle,com.android.ide.eclipse.traceview,16.0.1.v201112150204-238534,"com.android.ide.eclipse.traceview",1348855115861
+started,bundle,org.eclipse.mylyn.team.ui,3.7.1.v20120425-0100,"org.eclipse.mylyn.team.ui",1348855115877
+started,bundle,org.eclipse.jdt.apt.core,3.3.500.v20110420-1015,"org.eclipse.jdt.apt.core",1348855115877
+started,bundle,org.eclipse.core.variables,3.2.500.v20110511,"org.eclipse.core.variables",1348855115955
+started,bundle,org.eclipse.jdt.junit,3.7.0.v20110505-0800,"org.eclipse.jdt.junit",1348855115986
+started,bundle,org.eclipse.epp.usagedata.ui,1.3.1.R201106061540,"org.eclipse.epp.usagedata.ui",1348855116423
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1348855117203
+opened,view,org.eclipse.ui.console,3.5.100.v20110511,"org.eclipse.ui.console.ConsoleView",1348855118576
+started,bundle,org.eclipse.wb.core.lib,1.1.0.r37x201109091012,"org.eclipse.wb.core.lib",1348855118857
+started,bundle,org.eclipse.wb.core,1.1.0.r37x201109091012,"org.eclipse.wb.core",1348855118997
