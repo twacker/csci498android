@@ -72,20 +72,19 @@ public class LunchList extends TabActivity {
 
 			switch( types.getCheckedRadioButtonId() ) {
 			case R.id.sit_down :
-				type = "sit_down";
+				current.setType( "sit_down" );
 				break;
 
 			case R.id.take_out :
-				type = "take_out";
+				current.setType( "take_out" );
 				break;
 
 			case R.id.delivery :
-				type = "delivery";
+				current.setType( "delivery" );
 				break;
 			}
 
 			helper.insert( name.getText().toString(), address.getText().toString(), type, notes.getText().toString() );
-			model.requery();
 		}
 	};
 
