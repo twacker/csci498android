@@ -6,4 +6,5 @@
 <fullyQualifiedTypeName name="apt.tutorial.R.drawable"/>
 <fullyQualifiedTypeName name="android.widget.AdapterView.OnItemClickListener"/>
 <fullyQualifiedTypeName name="apt.tutorial.R.id"/>
+<fullyQualifiedTypeName name="android.os.SystemClock"/>
 </qualifiedTypeNameHistroy>

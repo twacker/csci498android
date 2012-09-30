@@ -1,4 +1,4 @@
-#Sun Sep 30 09:43:39 MDT 2012
+#Sun Sep 30 09:34:15 MDT 2012
 eclipse.preferences.version=1
 org.eclipse.jdt.core.compiler.codegen.targetPlatform=1.5
 org.eclipse.jdt.core.compiler.compliance=1.5
@@ -34,11 +34,11 @@ org.eclipse.jdt.core.formatter.blank_lines_before_field=0
 org.eclipse.jdt.core.formatter.blank_lines_before_first_class_body_declaration=0
 org.eclipse.jdt.core.formatter.blank_lines_before_imports=1
 org.eclipse.jdt.core.formatter.blank_lines_before_member_type=0
-org.eclipse.jdt.core.formatter.blank_lines_before_method=0
+org.eclipse.jdt.core.formatter.blank_lines_before_method=1
 org.eclipse.jdt.core.formatter.blank_lines_before_new_chunk=1
 org.eclipse.jdt.core.formatter.blank_lines_before_package=0
 org.eclipse.jdt.core.formatter.blank_lines_between_import_groups=0
-org.eclipse.jdt.core.formatter.blank_lines_between_type_declarations=0
+org.eclipse.jdt.core.formatter.blank_lines_between_type_declarations=1
 org.eclipse.jdt.core.formatter.brace_position_for_annotation_type_declaration=end_of_line
 org.eclipse.jdt.core.formatter.brace_position_for_anonymous_type_declaration=end_of_line
 org.eclipse.jdt.core.formatter.brace_position_for_array_initializer=end_of_line

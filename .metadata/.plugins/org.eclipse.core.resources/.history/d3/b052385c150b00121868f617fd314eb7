@@ -59,18 +59,18 @@ public class LunchList extends TabActivity {
 	}
 
 	@Override
+	public void onPause() {
+		super.onPause();
+		isActive.set( false );
+	}
+
+	@Override
 	public void onResume() {
 		super.onResume();
 		isActive.set( true );
 		if( progress > 0 ) {
 			startWork();
 		}
-	}
-
-	@Override
-	public void onPause() {
-		super.onPause();
-		isActive.set( false );
 	}
 
 	@Override
@@ -125,7 +125,6 @@ public class LunchList extends TabActivity {
 	};
 
 	private Runnable longTask = new Runnable() {
-
 		public void run() {
 			for( int i = progress; i < 10000 && isActive.get(); i += 200 ) {
 				doSomeLongWork( 200 );
@@ -133,7 +132,6 @@ public class LunchList extends TabActivity {
 
 			if( isActive.get() ) {
 				runOnUiThread( new Runnable() {
-
 					public void run() {
 						setProgressBarVisibility( false );
 						progress = 0;
@@ -215,7 +213,6 @@ public class LunchList extends TabActivity {
 
 	private void doSomeLongWork( final int incr ) {
 		runOnUiThread( new Runnable() {
-
 			public void run() {
 				progress += incr;
 				setProgress( progress );
