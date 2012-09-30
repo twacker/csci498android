@@ -2,7 +2,6 @@ package apt.tutorial;
 
 import android.app.TabActivity;
 import android.content.Context;
-import android.database.Cursor;
 import android.os.Bundle;
 import android.view.*;
 import android.widget.*;
@@ -33,8 +32,7 @@ public class LunchList extends TabActivity {
 
 		helper = new RestaurantHelper( this );
 		model = helper.getAll();
-		startManagingCursor( model );
-		adapter = new RestaurantAdapter( model );
+		adapter = new RestaurantAdapter(model);
 		list.setAdapter( adapter );
 
 		// add the tabs to the view
@@ -56,6 +54,7 @@ public class LunchList extends TabActivity {
 		address = ( EditText ) findViewById( R.id.addr );
 		notes = ( EditText ) findViewById( R.id.notes );
 		types = ( RadioGroup ) findViewById( R.id.types );
+
 
 	}
 
@@ -91,14 +90,13 @@ public class LunchList extends TabActivity {
 	private AdapterView.OnItemClickListener onListClick = new AdapterView.OnItemClickListener() {
 
 		public void onItemClick( AdapterView< ? > parent, View view, int position, long id ) {
-			model.moveToPosition( position );
-			name.setText( helper.getName( model ) );
-			address.setText( helper.getAddress( model ) );
-			notes.setText( helper.getNotes( model ) );
-
-			if( helper.getType( model ).equals( "sit down" ) ) {
+			current = model.get( position );
+			name.setText( current.getName() );
+			address.setText( current.getAddress() );
+			notes.setText( current.getNotes() );
+			if( current.getType().equals( "sit down" ) ) {
 				types.check( R.id.sit_down );
-			} else if( helper.getType( model ).equals( "take_out" ) ) {
+			} else if( current.getType().equals( "take_out" ) ) {
 				types.check( R.id.take_out );
 			} else {
 				types.check( R.id.delivery );
@@ -140,13 +138,13 @@ public class LunchList extends TabActivity {
 			icon = ( ImageView ) row.findViewById( R.id.icon );
 		}
 
-		void populateFrom( Cursor c, RestaurantHelper helper ) {
-			name.setText( helper.getName( c ) );
-			address.setText( helper.getAddress( c ) );
+		void populateFrom( Restaurant r ) {
+			name.setText( r.getName() );
+			address.setText( r.getAddress() );
 
-			if( helper.getType( c ).equals( "sit_down" ) ) {
+			if( r.getType().equals( "sit_down" ) ) {
 				icon.setImageResource( R.drawable.ball_red );
-			} else if( helper.getType( c ).equals( "take_out" ) ) {
+			} else if( r.getType().equals( "take_out" ) ) {
 				icon.setImageResource( R.drawable.ball_yellow );
 			} else {
 				icon.setImageResource( R.drawable.ball_green );
