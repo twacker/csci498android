@@ -6,7 +6,6 @@ import android.database.Cursor;
 import android.os.Bundle;
 import android.view.*;
 import android.widget.*;
-import android.preference.PreferenceManager;
 
 public class LunchList extends ListActivity {
 
@@ -19,7 +18,6 @@ public class LunchList extends ListActivity {
 	RadioGroup types = null;
 	Restaurant current = null;
 	RestaurantHelper helper = null;
-	SharedPreferences prefs = null;
 
 	public final static String ID_EXTRA = "apt.tutorial._ID";
 
@@ -28,11 +26,12 @@ public class LunchList extends ListActivity {
 		super.onCreate( savedInstanceState );
 		setContentView( R.layout.main );
 
-		prefs = PreferenceManager.getDefaultSharedPreferences( this );
 		helper = new RestaurantHelper( this );
-		initList();
+		model = helper.getAll();
+		startManagingCursor( model );
+		adapter = new RestaurantAdapter( model );
+		setListAdapter( adapter );
 
-		prefs.registerOnSharedPreferenceChangeListener( prefListener );
 	}
 
 	@Override
@@ -85,26 +84,6 @@ public class LunchList extends ListActivity {
 			row.setTag( holder );
 			return row;
 		}
-	}
-
-	private SharedPreferences.OnSharedPreferenceChangeListener prefListener = new SharedPreferences.OnSharedPreferenceChangeListener() {
-		public void onSharedPreferenceChanged( SharedPreferences sharedPrefs, String key ) {
-			if ( key.equals( "sort_order" ) ) {
-				initList();
-			}
-		}
-	};
-
-	private void initList() {
-		if ( model != null ) {
-			stopManagingCursor( model );
-			model.close();
-		}
-
-		model = helper.getAll( prefs.getString( "sort_order", "name" ) );
-		startManagingCursor( model );
-		adapter = new RestaurantAdapter( model );
-		setListAdapter( adapter );
 	}
 
 	static class RestaurantHolder {
