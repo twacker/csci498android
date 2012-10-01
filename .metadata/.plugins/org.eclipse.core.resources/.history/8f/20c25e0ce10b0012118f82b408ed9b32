@@ -1,0 +1,22 @@
+package apt.tutorial;
+
+import android.app.Activity;
+import android.database.Cursor;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.*;
+
+public class DetailForm extends Activity {
+	
+	EditText name = null;
+	EditText address = null;
+	EditText notes = null;
+	RadioGroup types = null;
+	RestaurantHelper helper = null;
+	
+	@Override
+	public void onCreate( Bundle savedInstanceState ) {
+		super.onCreate( savedInstanceState );
+		setContentView(R.layout.detail_form);
+	}
+}

@@ -1,6 +1,6 @@
 package apt.tutorial;
 
-import android.app.TabActivity;
+import android.app.ListActivity;
 import android.content.*;
 import android.database.Cursor;
 import android.os.Bundle;
@@ -8,7 +8,7 @@ import android.view.*;
 import android.widget.*;
 import java.util.*;
 
-public class LunchList extends TabActivity {
+public class LunchList extends ListActivity {
 
 	Cursor model = null;
 	RestaurantAdapter adapter = null;
@@ -20,42 +20,18 @@ public class LunchList extends TabActivity {
 	Restaurant current = null;
 	RestaurantHelper helper = null;
 
+	public final static String ID_EXTRA = "apt.tutorial._ID";
+
 	@Override
 	public void onCreate( Bundle savedInstanceState ) {
 		super.onCreate( savedInstanceState );
 		setContentView( R.layout.main );
 
-		Button save = ( Button ) findViewById( R.id.save );
-
-		save.setOnClickListener( onSave );
-
-		ListView list = ( ListView ) findViewById( R.id.restaurants );
-
 		helper = new RestaurantHelper( this );
 		model = helper.getAll();
 		startManagingCursor( model );
 		adapter = new RestaurantAdapter( model );
-		list.setAdapter( adapter );
-
-		// add the tabs to the view
-		TabHost.TabSpec spec = getTabHost().newTabSpec( "tag1" );
-		spec.setContent( R.id.restaurants );
-		spec.setIndicator( "List", getResources().getDrawable( R.drawable.list ) );
-		getTabHost().addTab( spec );
-
-		spec = getTabHost().newTabSpec( "tag2" );
-		spec.setContent( R.id.details );
-		spec.setIndicator( "Details", getResources().getDrawable( R.drawable.restaurant ) );
-		getTabHost().addTab( spec );
-
-		getTabHost().setCurrentTab( 0 );
-
-		list.setOnItemClickListener( onListClick );
-
-		name = ( EditText ) findViewById( R.id.name );
-		address = ( EditText ) findViewById( R.id.addr );
-		notes = ( EditText ) findViewById( R.id.notes );
-		types = ( RadioGroup ) findViewById( R.id.types );
+		setListAdapter( adapter );
 
 	}
 
@@ -65,51 +41,27 @@ public class LunchList extends TabActivity {
 		helper.close();
 	}
 
-	private View.OnClickListener onSave = new View.OnClickListener() {
+	@Override
+	public boolean onCreateOptionsMenu( Menu menu ) {
+		new MenuInflater( this ).inflate( R.menu.option, menu );
+		return super.onCreateOptionsMenu( menu );
+	}
 
-		public void onClick( View v ) {
-			String type = null;
-
-			switch( types.getCheckedRadioButtonId() ) {
-			case R.id.sit_down :
-				type = "sit_down";
-				break;
-
-			case R.id.take_out :
-				type = "take_out";
-				break;
-
-			case R.id.delivery :
-				type = "delivery";
-				break;
-			}
-
-			helper.insert( name.getText().toString(), address.getText().toString(), type, notes.getText().toString() );
-			model.requery();
+	@Override
+	public boolean onOptionsItemSelected( MenuItem item ) {
+		if( item.getItemId() == R.id.add ) {
+			startActivity( new Intent( LunchList.this, DetailForm.class ) );
+			return true;
 		}
-	};
+		return super.onContextItemSelected( item );
+	}
 
-	private AdapterView.OnItemClickListener onListClick = new AdapterView.OnItemClickListener() {
-
-		public void onItemClick( AdapterView< ? > parent, View view, int position, long id ) {
-			Intent i = new Intent(LunchList.this, DetailForm.class);
-			startActivity(i);
-			
-			/*model.moveToPosition( position );
-			name.setText( helper.getName( model ) );
-			address.setText( helper.getAddress( model ) );
-			notes.setText( helper.getNotes( model ) );
-
-			if( helper.getType( model ).equals( "sit down" ) ) {
-				types.check( R.id.sit_down );
-			} else if( helper.getType( model ).equals( "take_out" ) ) {
-				types.check( R.id.take_out );
-			} else {
-				types.check( R.id.delivery );
-			}
-			getTabHost().setCurrentTab( 1 );*/
-		}
-	};
+	@Override
+	public void onListItemClick( ListView list, View view, int position, long id ) {
+		Intent i = new Intent( LunchList.this, DetailForm.class );
+		i.putExtra( ID_EXTRA, String.valueOf( id ) );
+		startActivity( i );
+	}
 
 	class RestaurantAdapter extends CursorAdapter {
 		RestaurantAdapter( Cursor c ) {
