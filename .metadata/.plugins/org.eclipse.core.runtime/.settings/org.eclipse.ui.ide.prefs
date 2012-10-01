@@ -1,6 +1,7 @@
-#Tue Sep 25 22:08:28 MDT 2012
+#Sun Sep 30 11:53:04 MDT 2012
 eclipse.preferences.version=1
 tipsAndTricks=true
 platformState=1327623831014
+EXIT_PROMPT_ON_CLOSE_LAST_WINDOW=false
 quickStart=false
 PROBLEMS_FILTERS_MIGRATE=true

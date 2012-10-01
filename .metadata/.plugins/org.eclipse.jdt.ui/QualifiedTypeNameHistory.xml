@@ -7,4 +7,5 @@
 <fullyQualifiedTypeName name="android.widget.AdapterView.OnItemClickListener"/>
 <fullyQualifiedTypeName name="apt.tutorial.R.id"/>
 <fullyQualifiedTypeName name="android.os.SystemClock"/>
+<fullyQualifiedTypeName name="android.database.Cursor"/>
 </qualifiedTypeNameHistroy>

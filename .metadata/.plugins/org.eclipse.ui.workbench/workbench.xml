@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="14" version="2.0">
+<workbench progressCount="16" version="2.0">
 <workbenchAdvisor/>
 <window height="728" maximized="true" width="683" x="-922" y="-15">
 <fastViewData fastViewLocation="1024"/>
@@ -37,18 +37,19 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="1"/>
 <part id="2"/>
+<part id="4"/>
 <part id="0"/>
 <part id="3"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="main.xml" partName="main.xml" path="C:/Users/Dale Anderson/Documents/GitHub/csci498android/LunchList/res/layout/main.xml" title="main.xml" tooltip="LunchList/res/layout/main.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/LunchList/res/layout/main.xml"/>
+<editor id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="main.xml" partName="main.xml" path="C:/Users/Dale Anderson/Documents/GitHub/csci498android/LunchList/res/layout-land/main.xml" title="main.xml" tooltip="LunchList/res/layout-land/main.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/LunchList/res/layout-land/main.xml"/>
 </editor>
 <editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LunchList.java" partName="LunchList.java" path="C:/Users/Dale Anderson/Documents/GitHub/csci498android/LunchList/src/apt/tutorial/LunchList.java" title="LunchList.java" tooltip="LunchList/src/apt/tutorial/LunchList.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/LunchList/src/apt/tutorial/LunchList.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="5195" selectionTopPixel="2519"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1995" selectionTopPixel="990"/>
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Restaurant.java" partName="Restaurant.java" path="C:/Users/Dale Anderson/Documents/GitHub/csci498android/LunchList/src/apt/tutorial/Restaurant.java" title="Restaurant.java" tooltip="LunchList/src/apt/tutorial/Restaurant.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/LunchList/src/apt/tutorial/Restaurant.java"/>
@@ -57,8 +58,18 @@
 <editor id="com.android.ide.eclipse.editors.menu.MenuEditor" name="option.xml" partName="option.xml" path="C:/Users/Dale Anderson/Documents/GitHub/csci498android/LunchList/res/menu/option.xml" title="option.xml" tooltip="LunchList/res/menu/option.xml" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/LunchList/res/menu/option.xml"/>
 </editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RestaurantHelper.java" partName="RestaurantHelper.java" path="C:/Users/Dale Anderson/Documents/GitHub/csci498android/LunchList/src/apt/tutorial/RestaurantHelper.java" title="RestaurantHelper.java" tooltip="LunchList/src/apt/tutorial/RestaurantHelper.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/LunchList/src/apt/tutorial/RestaurantHelper.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="739" selectionTopPixel="0"/>
+</editor>
 </editors>
 <views>
+<view id="com.android.ide.eclipse.ddms.views.LogCatView" partName="LogCat">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
+<viewState/>
+</view>
 <view id="org.eclipse.jdt.ui.PackageExplorer" partName="Package Explorer">
 <viewState group_libraries="1" layout="2" linkWithEditor="0" rootMode="1" workingSetName="">
 <customFilters userDefinedPatternsEnabled="false">
@@ -158,6 +169,8 @@
 <hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
 <view id="org.eclipse.jdt.ui.PackageExplorer"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="com.android.ide.eclipse.ddms.views.LogCatView"/>
 <fastViewBars/>
 <layout>
 <mainWindow>
@@ -185,9 +198,9 @@
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.15276752" ratioLeft="207" ratioRight="1148" relationship="2" relative="left"/>
 <info folder="true" part="bottom" ratio="0.5403226" ratioLeft="335" ratioRight="285" relationship="4" relative="org.eclipse.ui.editorss">
-<folder appearance="2" expanded="2">
-<page content="org.eclipse.ui.console.ConsoleView" label="LabelNotFound"/>
-<page content="com.android.ide.eclipse.ddms.views.LogCatView" label="LabelNotFound"/>
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<page content="com.android.ide.eclipse.ddms.views.LogCatView" label="LogCat"/>
 <page content="org.eclipse.ui.views.ProblemView" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.JavadocView" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.SourceView" label="LabelNotFound"/>
@@ -195,7 +208,10 @@
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ProgressView" label="LabelNotFound"/>
 <page content="org.eclipse.team.ui.GenericHistoryView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+</presentation>
 </folder>
 </info>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@6e755f8f" ratio="0.7493333" ratioLeft="562" ratioRight="188" relationship="2" relative="org.eclipse.ui.editorss">
@@ -227,145 +243,157 @@
 <navigationHistory>
 <editors>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/LunchList/src/apt/tutorial/LunchList.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" path="/LunchList/res/layout/main.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/LunchList/src/apt/tutorial/RestaurantHelper.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/LunchList/src/apt/tutorial/Restaurant.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.menu.MenuEditor" path="/LunchList/res/menu/option.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" path="/LunchList/res/layout-land/main.xml"/>
 </editors>
-<item historyLabel="LunchList.java" index="0">
-<position info="not_deleted" x="655" y="0"/>
+<item historyLabel="RestaurantHelper.java" index="1">
+<position info="not_deleted" x="817" y="0"/>
 </item>
-<item historyLabel="main.xml" index="1"/>
+<item historyLabel="RestaurantHelper.java" index="1">
+<position info="not_deleted" x="861" y="0"/>
+</item>
+<item historyLabel="RestaurantHelper.java" index="1">
+<position info="not_deleted" x="882" y="0"/>
+</item>
+<item historyLabel="RestaurantHelper.java" index="1">
+<position info="not_deleted" x="890" y="0"/>
+</item>
+<item historyLabel="RestaurantHelper.java" index="1">
+<position info="not_deleted" x="1046" y="0"/>
+</item>
+<item historyLabel="RestaurantHelper.java" index="1">
+<position info="not_deleted" x="1046" y="0"/>
+</item>
+<item historyLabel="RestaurantHelper.java" index="1">
+<position info="not_deleted" x="949" y="0"/>
+</item>
+<item historyLabel="RestaurantHelper.java" index="1">
+<position info="not_deleted" x="1046" y="0"/>
+</item>
+<item historyLabel="RestaurantHelper.java" index="1">
+<position info="not_deleted" x="978" y="0"/>
+</item>
+<item historyLabel="RestaurantHelper.java" index="1">
+<position info="not_deleted" x="1046" y="0"/>
+</item>
+<item historyLabel="RestaurantHelper.java" index="1">
+<position info="not_deleted" x="1007" y="0"/>
+</item>
+<item historyLabel="RestaurantHelper.java" index="1">
+<position info="not_deleted" x="1040" y="0"/>
+</item>
+<item historyLabel="RestaurantHelper.java" index="1">
+<position info="not_deleted" x="820" y="0"/>
+</item>
+<item historyLabel="LunchList.java" index="0">
+<position info="not_deleted" x="1681" y="0"/>
+</item>
+<item historyLabel="LunchList.java" index="0">
+<position info="not_deleted" x="2193" y="0"/>
+</item>
+<item historyLabel="LunchList.java" index="0">
+<position info="not_deleted" x="2151" y="0"/>
+</item>
+<item historyLabel="LunchList.java" index="0">
+<position info="not_deleted" x="2162" y="0"/>
+</item>
+<item historyLabel="LunchList.java" index="0">
+<position info="not_deleted" x="2181" y="0"/>
+</item>
+<item historyLabel="LunchList.java" index="0">
+<position info="not_deleted" x="2192" y="0"/>
+</item>
+<item historyLabel="LunchList.java" index="0">
+<position info="not_deleted" x="2215" y="0"/>
+</item>
+<item historyLabel="LunchList.java" index="0">
+<position info="not_deleted" x="2444" y="0"/>
+</item>
+<item historyLabel="RestaurantHelper.java" index="1">
+<position info="not_deleted" x="820" y="0"/>
+</item>
+<item historyLabel="RestaurantHelper.java" index="1">
+<position info="not_deleted" x="1076" y="0"/>
+</item>
+<item historyLabel="RestaurantHelper.java" index="1">
+<position info="not_deleted" x="1171" y="0"/>
+</item>
+<item historyLabel="RestaurantHelper.java" index="1">
+<position info="not_deleted" x="1261" y="0"/>
+</item>
+<item historyLabel="RestaurantHelper.java" index="1">
+<position info="not_deleted" x="1563" y="0"/>
+</item>
+<item historyLabel="RestaurantHelper.java" index="1">
+<position info="not_deleted" x="1379" y="0"/>
+</item>
+<item historyLabel="RestaurantHelper.java" index="1">
+<position info="not_deleted" x="1408" y="0"/>
+</item>
+<item historyLabel="RestaurantHelper.java" index="1">
+<position info="not_deleted" x="1451" y="0"/>
+</item>
+<item historyLabel="RestaurantHelper.java" index="1">
+<position info="not_deleted" x="1480" y="0"/>
+</item>
+<item historyLabel="RestaurantHelper.java" index="1">
+<position info="not_deleted" x="1524" y="0"/>
+</item>
+<item historyLabel="RestaurantHelper.java" index="1">
+<position info="not_deleted" x="739" y="0"/>
+</item>
+<item historyLabel="LunchList.java" index="0">
+<position info="not_deleted" x="2444" y="0"/>
+</item>
+<item historyLabel="LunchList.java" index="0">
+<position info="not_deleted" x="2985" y="0"/>
+</item>
+<item historyLabel="LunchList.java" index="0">
+<position info="not_deleted" x="3017" y="0"/>
+</item>
+<item historyLabel="LunchList.java" index="0">
+<position info="not_deleted" x="3498" y="0"/>
+</item>
+<item historyLabel="LunchList.java" index="0">
+<position info="not_deleted" x="3146" y="0"/>
+</item>
+<item historyLabel="LunchList.java" index="0">
+<position info="not_deleted" x="3198" y="0"/>
+</item>
+<item historyLabel="LunchList.java" index="0">
+<position info="not_deleted" x="3280" y="0"/>
+</item>
+<item historyLabel="LunchList.java" index="0">
+<position info="not_deleted" x="3331" y="0"/>
+</item>
+<item historyLabel="LunchList.java" index="0">
+<position info="not_deleted" x="3393" y="0"/>
+</item>
+<item historyLabel="LunchList.java" index="0">
+<position info="not_deleted" x="3494" y="0"/>
+</item>
+<item historyLabel="LunchList.java" index="0">
+<position info="not_deleted" x="3452" y="0"/>
+</item>
+<item historyLabel="LunchList.java" index="0">
+<position info="not_deleted" x="340" y="0"/>
+</item>
 <item historyLabel="Restaurant.java" index="2">
 <position info="not_deleted" x="395" y="0"/>
 </item>
-<item historyLabel="LunchList.java" index="0">
-<position info="not_deleted" x="655" y="0"/>
+<item historyLabel="RestaurantHelper.java" index="1">
+<position info="not_deleted" x="739" y="0"/>
 </item>
 <item historyLabel="LunchList.java" index="0">
-<position info="not_deleted" x="1526" y="0"/>
+<position info="not_deleted" x="340" y="0"/>
 </item>
 <item historyLabel="LunchList.java" index="0">
-<position info="not_deleted" x="1553" y="0"/>
+<position info="not_deleted" x="2937" y="1"/>
 </item>
-<item historyLabel="LunchList.java" index="0">
-<position info="not_deleted" x="1857" y="0"/>
-</item>
-<item historyLabel="LunchList.java" index="0">
-<position info="not_deleted" x="1872" y="0"/>
-</item>
-<item historyLabel="LunchList.java" index="0">
-<position info="not_deleted" x="3140" y="0"/>
-</item>
-<item historyLabel="option.xml" index="3"/>
-<item historyLabel="main.xml" index="1"/>
-<item historyLabel="LunchList.java" index="0">
-<position info="not_deleted" x="3140" y="0"/>
-</item>
-<item historyLabel="LunchList.java" index="0">
-<position info="not_deleted" x="4198" y="0"/>
-</item>
-<item historyLabel="LunchList.java" index="0">
-<position info="not_deleted" x="4227" y="0"/>
-</item>
-<item historyLabel="LunchList.java" index="0">
-<position info="not_deleted" x="4258" y="0"/>
-</item>
-<item historyLabel="LunchList.java" index="0">
-<position info="not_deleted" x="4302" y="0"/>
-</item>
-<item historyLabel="LunchList.java" index="0">
-<position info="not_deleted" x="4373" y="0"/>
-</item>
-<item historyLabel="LunchList.java" index="0">
-<position info="not_deleted" x="4398" y="0"/>
-</item>
-<item historyLabel="LunchList.java" index="0">
-<position info="not_deleted" x="4414" y="0"/>
-</item>
-<item historyLabel="LunchList.java" index="0">
-<position info="not_deleted" x="4461" y="0"/>
-</item>
-<item historyLabel="LunchList.java" index="0">
-<position info="not_deleted" x="4488" y="0"/>
-</item>
-<item historyLabel="LunchList.java" index="0">
-<position info="not_deleted" x="4523" y="0"/>
-</item>
-<item historyLabel="LunchList.java" index="0">
-<position info="not_deleted" x="4584" y="0"/>
-</item>
-<item historyLabel="LunchList.java" index="0">
-<position info="not_deleted" x="4591" y="0"/>
-</item>
-<item historyLabel="LunchList.java" index="0">
-<position info="not_deleted" x="4134" y="0"/>
-</item>
-<item historyLabel="main.xml" index="1"/>
-<item historyLabel="LunchList.java" index="0">
-<position info="not_deleted" x="4134" y="0"/>
-</item>
-<item historyLabel="LunchList.java" index="0">
-<position info="not_deleted" x="618" y="0"/>
-</item>
-<item historyLabel="LunchList.java" index="0">
-<position info="not_deleted" x="4861" y="0"/>
-</item>
-<item historyLabel="LunchList.java" index="0">
-<position info="not_deleted" x="5010" y="0"/>
-</item>
-<item historyLabel="LunchList.java" index="0">
-<position info="not_deleted" x="5124" y="0"/>
-</item>
-<item historyLabel="LunchList.java" index="0">
-<position info="not_deleted" x="5160" y="0"/>
-</item>
-<item historyLabel="LunchList.java" index="0">
-<position info="not_deleted" x="4530" y="0"/>
-</item>
-<item historyLabel="option.xml" index="3"/>
-<item historyLabel="LunchList.java" index="0">
-<position info="not_deleted" x="4530" y="0"/>
-</item>
-<item historyLabel="LunchList.java" index="0">
-<position info="not_deleted" x="4639" y="0"/>
-</item>
-<item historyLabel="LunchList.java" index="0">
-<position info="not_deleted" x="4653" y="0"/>
-</item>
-<item historyLabel="LunchList.java" index="0">
-<position info="not_deleted" x="4735" y="0"/>
-</item>
-<item historyLabel="LunchList.java" index="0">
-<position info="not_deleted" x="4761" y="0"/>
-</item>
-<item historyLabel="LunchList.java" index="0">
-<position info="not_deleted" x="4417" y="0"/>
-</item>
-<item historyLabel="main.xml" index="1"/>
-<item historyLabel="option.xml" index="3"/>
-<item historyLabel="LunchList.java" index="0">
-<position info="not_deleted" x="4417" y="0"/>
-</item>
-<item historyLabel="LunchList.java" index="0">
-<position info="not_deleted" x="4691" y="0"/>
-</item>
-<item historyLabel="LunchList.java" index="0">
-<position info="not_deleted" x="4895" y="0"/>
-</item>
-<item historyLabel="LunchList.java" index="0">
-<position info="not_deleted" x="4919" y="0"/>
-</item>
-<item historyLabel="LunchList.java" index="0">
-<position info="not_deleted" x="4971" y="0"/>
-</item>
-<item historyLabel="LunchList.java" index="0">
-<position info="not_deleted" x="5228" y="0"/>
-</item>
-<item historyLabel="LunchList.java" index="0">
-<position info="not_deleted" x="5253" y="0"/>
-</item>
+<item historyLabel="main.xml" index="3"/>
 <item active="true" historyLabel="LunchList.java" index="0">
-<position info="not_deleted" x="5294" y="0"/>
+<position info="not_deleted" x="2937" y="1"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -384,6 +412,12 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RestaurantHelper.java" tooltip="LunchList/src/apt/tutorial/RestaurantHelper.java">
+<persistable path="/LunchList/src/apt/tutorial/RestaurantHelper.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="proguard.cfg" tooltip="LunchList/proguard.cfg">
+<persistable path="/LunchList/proguard.cfg"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.menu.MenuEditor" name="option.xml" tooltip="LunchList/res/menu/option.xml">
 <persistable path="/LunchList/res/menu/option.xml"/>
 </file>
