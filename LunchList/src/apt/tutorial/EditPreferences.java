@@ -1,6 +1,5 @@
 package apt.tutorial;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
 

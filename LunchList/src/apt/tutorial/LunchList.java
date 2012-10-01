@@ -21,7 +21,7 @@ public class LunchList extends ListActivity {
 	RestaurantHelper helper = null;
 	SharedPreferences prefs = null;
 
-	public final static String ID_EXTRA = "apt.tutorial._ID";
+	public final static String ID_EXTRA = "@strings/id_extra";
 
 	@Override
 	public void onCreate( Bundle savedInstanceState ) {
@@ -89,7 +89,7 @@ public class LunchList extends ListActivity {
 
 	private SharedPreferences.OnSharedPreferenceChangeListener prefListener = new SharedPreferences.OnSharedPreferenceChangeListener() {
 		public void onSharedPreferenceChanged( SharedPreferences sharedPrefs, String key ) {
-			if ( key.equals( "sort_order" ) ) {
+			if ( key.equals( "@strings/sortorder" ) ) {
 				initList();
 			}
 		}
@@ -101,7 +101,7 @@ public class LunchList extends ListActivity {
 			model.close();
 		}
 
-		model = helper.getAll( prefs.getString( "sort_order", "name" ) );
+		model = helper.getAll( prefs.getString( "@strings/sortorder", "name" ) );
 		startManagingCursor( model );
 		adapter = new RestaurantAdapter( model );
 		setListAdapter( adapter );
@@ -123,9 +123,9 @@ public class LunchList extends ListActivity {
 			name.setText( helper.getName( c ) );
 			address.setText( helper.getAddress( c ) );
 
-			if ( helper.getType( c ).equals( "sit_down" ) ) {
+			if ( helper.getType( c ).equals( "@string/sit_down" ) ) {
 				icon.setImageResource( R.drawable.ball_red );
-			} else if ( helper.getType( c ).equals( "take_out" ) ) {
+			} else if ( helper.getType( c ).equals( "@string/take_out" ) ) {
 				icon.setImageResource( R.drawable.ball_yellow );
 			} else {
 				icon.setImageResource( R.drawable.ball_green );

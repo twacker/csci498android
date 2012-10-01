@@ -48,13 +48,13 @@ public class DetailForm extends Activity {
 			String type = null;
 			switch( types.getCheckedRadioButtonId() ) {
 			case R.id.sit_down :
-				type = "sit_down";
+				type = "@strings/sit_down";
 				break;
 			case R.id.take_out :
-				type = "take_out";
+				type = "@strings/take_out";
 				break;
 			case R.id.delivery :
-				type = "delivery";
+				type = "@strings/_delivery";
 				break;
 			}
 
@@ -75,9 +75,9 @@ public class DetailForm extends Activity {
 		address.setText( helper.getAddress( c ) );
 		notes.setText( helper.getNotes( c ) );
 
-		if( helper.getType( c ).equals( "sit_down" ) ) {
+		if( helper.getType( c ).equals( "@strings/sit_down" ) ) {
 			types.check( R.id.sit_down );
-		} else if( helper.getType( c ).equals( "take_out" ) ) {
+		} else if( helper.getType( c ).equals( "@strings/take_out" ) ) {
 			types.check( R.id.take_out );
 		} else {
 			types.check( R.id.delivery );
