@@ -6,7 +6,6 @@ import android.database.Cursor;
 import android.os.Bundle;
 import android.view.*;
 import android.widget.*;
-import java.util.*;
 
 public class LunchList extends ListActivity {
 
@@ -49,8 +48,11 @@ public class LunchList extends ListActivity {
 
 	@Override
 	public boolean onOptionsItemSelected( MenuItem item ) {
-		if( item.getItemId() == R.id.add ) {
+		if ( item.getItemId() == R.id.add ) {
 			startActivity( new Intent( LunchList.this, DetailForm.class ) );
+			return true;
+		} else if ( item.getItemId() == R.id.prefs ) {
+			startActivity( new Intent( this, EditPreferences.class ) );
 			return true;
 		}
 		return super.onContextItemSelected( item );
@@ -100,9 +102,9 @@ public class LunchList extends ListActivity {
 			name.setText( helper.getName( c ) );
 			address.setText( helper.getAddress( c ) );
 
-			if( helper.getType( c ).equals( "sit_down" ) ) {
+			if ( helper.getType( c ).equals( "sit_down" ) ) {
 				icon.setImageResource( R.drawable.ball_red );
-			} else if( helper.getType( c ).equals( "take_out" ) ) {
+			} else if ( helper.getType( c ).equals( "take_out" ) ) {
 				icon.setImageResource( R.drawable.ball_yellow );
 			} else {
 				icon.setImageResource( R.drawable.ball_green );

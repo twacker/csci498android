@@ -5,7 +5,10 @@
 <fullyQualifiedTypeName name="android.widget.TabHost.TabSpec"/>
 <fullyQualifiedTypeName name="apt.tutorial.R.drawable"/>
 <fullyQualifiedTypeName name="android.widget.AdapterView.OnItemClickListener"/>
-<fullyQualifiedTypeName name="apt.tutorial.R.id"/>
 <fullyQualifiedTypeName name="android.os.SystemClock"/>
 <fullyQualifiedTypeName name="android.database.Cursor"/>
+<fullyQualifiedTypeName name="apt.tutorial.R.layout"/>
+<fullyQualifiedTypeName name="android.view.View.OnClickListener"/>
+<fullyQualifiedTypeName name="apt.tutorial.R.menu"/>
+<fullyQualifiedTypeName name="apt.tutorial.R.id"/>
 </qualifiedTypeNameHistroy>
