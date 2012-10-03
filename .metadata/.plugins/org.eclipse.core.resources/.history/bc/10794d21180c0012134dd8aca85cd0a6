@@ -21,7 +21,7 @@
     <!-- LunchList.java -->
     <string name="id_extra">apt.tutorial._ID</string>
     <string name="sortorder">sort_order</string>
-    <!-- uses some from DetailsForm and RestaurantHelper-->
+    <!-- uses some from DetailsForm -->
 
     <!-- main.xml -->
     <string name="emptylistmsg">Click the MENU button to add a restaurant!</string>
@@ -35,16 +35,5 @@
     <string name="sortdialogtitle">Choose a sort order</string>
     <string name="sortsummary">Choose the order the list uses</string>
     
-    <!-- RestaurantHelper.java -->
-    <string name="dbname">lunchlist.db</string>
-    <string name="createtable">CREATE TABLE restaurants (_id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, address TEXT, type TEXT, notes TEXT);</string>
-    <string name="getall">SELECT _id, name, address, type, notes FROM restaurants ORDER BY </string>
-    <string name="getbyid">Select _id, name, address, type, notes FROM restaurants WHERE _id=?</string>
-    <string name="namecol">name</string>
-    <string name="addrcol">address</string>
-    <string name="typecol">type</string>
-    <string name="notecol">notes</string>
-    <string name="db">restaurants</string>
-    <string name="condition">_ID=?</string>
     
 </resources>

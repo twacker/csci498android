@@ -1,3 +1,2 @@
 INDEX VERSION 1.126+C:\Users\Dale Anderson\Documents\GitHub\csci498android\.metadata\.plugins\org.eclipse.jdt.core
-2778832813.index
 362167276.index

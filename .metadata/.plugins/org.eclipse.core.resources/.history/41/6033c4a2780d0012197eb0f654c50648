@@ -45,6 +45,5 @@
     <string name="typecol">type</string>
     <string name="notecol">notes</string>
     <string name="db">restaurants</string>
-    <string name="condition">_ID=?</string>
     
 </resources>

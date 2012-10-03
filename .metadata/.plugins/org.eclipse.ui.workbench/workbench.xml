@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="14" version="2.0">
+<workbench progressCount="17" version="2.0">
 <workbenchAdvisor/>
 <window height="728" maximized="true" width="683" x="-922" y="-15">
 <fastViewData fastViewLocation="1024"/>
@@ -22,6 +22,8 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="190" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ant.ui.internal.editor.AntEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.ui.browser.editor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="com.android.ide.eclipse.editors.layout.LayoutEditor" itemType="typePlaceholder" x="-1" y="-1"/>
@@ -44,18 +46,20 @@
 </folder>
 </info>
 </editorArea>
-<editor id="com.android.ide.eclipse.editors.menu.MenuEditor" name="option.xml" partName="option.xml" path="C:/Users/Dale Anderson/Documents/GitHub/csci498android/LunchList/res/menu/option.xml" title="option.xml" tooltip="LunchList/res/menu/option.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/LunchList/res/menu/option.xml"/>
+<editor id="com.android.ide.eclipse.editors.resources.ResourcesEditor" name="strings.xml" partName="strings.xml" path="C:/Users/Dale Anderson/Documents/GitHub/csci498android/LunchList/res/values/strings.xml" title="strings.xml" tooltip="LunchList/res/values/strings.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/LunchList/res/values/strings.xml"/>
 </editor>
-<editor id="com.android.ide.eclipse.editors.xml.XmlEditor" name="preferences.xml" partName="preferences.xml" path="C:/Users/Dale Anderson/Documents/GitHub/csci498android/LunchList/res/xml/preferences.xml" title="preferences.xml" tooltip="LunchList/res/xml/preferences.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/LunchList/res/xml/preferences.xml"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LunchList.java" partName="LunchList.java" path="C:/Users/Dale Anderson/Documents/GitHub/csci498android/LunchList/src/apt/tutorial/LunchList.java" title="LunchList.java" tooltip="LunchList/src/apt/tutorial/LunchList.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/LunchList/src/apt/tutorial/LunchList.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3616" selectionTopPixel="1200"/>
 </editor>
-<editor id="com.android.ide.eclipse.editors.resources.ResourcesEditor" name="arrays.xml" partName="arrays.xml" path="C:/Users/Dale Anderson/Documents/GitHub/csci498android/LunchList/res/values/arrays.xml" title="arrays.xml" tooltip="LunchList/res/values/arrays.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/LunchList/res/values/arrays.xml"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Restaurant.java" partName="Restaurant.java" path="C:/Users/Dale Anderson/Documents/GitHub/csci498android/LunchList/src/apt/tutorial/Restaurant.java" title="Restaurant.java" tooltip="LunchList/src/apt/tutorial/Restaurant.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/LunchList/src/apt/tutorial/Restaurant.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
 </editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EditPreferences.java" partName="EditPreferences.java" path="C:/Users/Dale Anderson/Documents/GitHub/csci498android/LunchList/src/apt/tutorial/EditPreferences.java" title="EditPreferences.java" tooltip="LunchList/src/apt/tutorial/EditPreferences.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/LunchList/src/apt/tutorial/EditPreferences.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="358" selectionTopPixel="0"/>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RestaurantHelper.java" partName="RestaurantHelper.java" path="C:/Users/Dale Anderson/Documents/GitHub/csci498android/LunchList/src/apt/tutorial/RestaurantHelper.java" title="RestaurantHelper.java" tooltip="LunchList/src/apt/tutorial/RestaurantHelper.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/LunchList/src/apt/tutorial/RestaurantHelper.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="324" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -226,144 +230,94 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/LunchList/src/apt/tutorial/DetailForm.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/LunchList/src/apt/tutorial/LunchList.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/LunchList/src/apt/tutorial/RestaurantHelper.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" path="/LunchList/res/xml/preferences.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.menu.MenuEditor" path="/LunchList/res/menu/option.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" path="/LunchList/res/layout/detail_form.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.resources.ResourcesEditor" path="/LunchList/res/values/strings.xml"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/LunchList/src/apt/tutorial/LunchList.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.xml.XmlEditor" path="/LunchList/res/xml/preferences.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ant.ui.internal.editor.AntEditor" path="/LunchList/build.xml"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.resources.ResourcesEditor" path="/LunchList/res/values/arrays.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/LunchList/src/apt/tutorial/DetailForm.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.menu.MenuEditor" path="/LunchList/res/menu/option.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" path="/LunchList/res/layout/main.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/LunchList/gen/apt/tutorial/R.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/LunchList/src/apt/tutorial/Restaurant.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/LunchList/src/apt/tutorial/EditPreferences"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/LunchList/src/apt/tutorial/EditPreferences.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/LunchList/src/apt/tutorial/EditPreferences.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/LunchList/src/apt/tutorial/RestaurantHelper.java"/>
 </editors>
-<item historyLabel="DetailForm.java" index="0">
-<position info="not_deleted" x="1542" y="0"/>
+<item historyLabel="LunchList.java" index="2">
+<position info="not_deleted" x="2373" y="0"/>
 </item>
-<item historyLabel="DetailForm.java" index="0">
-<position info="not_deleted" x="1561" y="0"/>
+<item historyLabel="strings.xml" index="1"/>
+<item historyLabel="LunchList.java" index="2">
+<position info="not_deleted" x="3305" y="0"/>
 </item>
-<item historyLabel="DetailForm.java" index="0">
-<position info="not_deleted" x="1572" y="0"/>
+<item historyLabel="strings.xml" index="1"/>
+<item historyLabel="preferences.xml" index="3"/>
+<item historyLabel="detail_form.xml" index="0"/>
+<item historyLabel="preferences.xml" index="3"/>
+<item historyLabel="build.xml" index="4">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="DetailForm.java" index="0">
-<position info="not_deleted" x="1595" y="0"/>
+<item historyLabel="preferences.xml" index="3"/>
+<item historyLabel="strings.xml" index="1"/>
+<item historyLabel="arrays.xml" index="5"/>
+<item historyLabel="preferences.xml" index="3"/>
+<item historyLabel="arrays.xml" index="5"/>
+<item historyLabel="preferences.xml" index="3"/>
+<item historyLabel="arrays.xml" index="5"/>
+<item historyLabel="strings.xml" index="1"/>
+<item historyLabel="option.xml" index="6"/>
+<item historyLabel="strings.xml" index="1"/>
+<item historyLabel="detail_form.xml" index="0"/>
+<item historyLabel="main.xml" index="7"/>
+<item historyLabel="detail_form.xml" index="0"/>
+<item historyLabel="strings.xml" index="1"/>
+<item historyLabel="R.java" index="8">
+<position info="not_deleted" x="593" y="0"/>
 </item>
-<item historyLabel="DetailForm.java" index="0">
-<position info="not_deleted" x="1606" y="0"/>
+<item historyLabel="option.xml" index="6"/>
+<item historyLabel="LunchList.java" index="2">
+<position info="not_deleted" x="3305" y="0"/>
 </item>
-<item historyLabel="DetailForm.java" index="0">
-<position info="not_deleted" x="1648" y="0"/>
+<item historyLabel="strings.xml" index="1"/>
+<item historyLabel="detail_form.xml" index="0"/>
+<item historyLabel="strings.xml" index="1"/>
+<item historyLabel="detail_form.xml" index="0"/>
+<item historyLabel="strings.xml" index="1"/>
+<item historyLabel="option.xml" index="6"/>
+<item historyLabel="strings.xml" index="1"/>
+<item historyLabel="option.xml" index="6"/>
+<item historyLabel="strings.xml" index="1"/>
+<item historyLabel="option.xml" index="6"/>
+<item historyLabel="strings.xml" index="1"/>
+<item historyLabel="LunchList.java" index="2">
+<position info="not_deleted" x="2963" y="0"/>
 </item>
-<item historyLabel="DetailForm.java" index="0">
-<position info="not_deleted" x="1671" y="0"/>
+<item historyLabel="strings.xml" index="1"/>
+<item historyLabel="LunchList.java" index="2">
+<position info="not_deleted" x="2963" y="0"/>
 </item>
-<item historyLabel="DetailForm.java" index="0">
-<position info="not_deleted" x="1682" y="0"/>
+<item historyLabel="strings.xml" index="1"/>
+<item historyLabel="LunchList.java" index="2">
+<position info="not_deleted" x="3498" y="0"/>
 </item>
-<item historyLabel="DetailForm.java" index="0">
-<position info="not_deleted" x="1685" y="0"/>
+<item historyLabel="strings.xml" index="1"/>
+<item historyLabel="LunchList.java" index="2">
+<position info="not_deleted" x="3616" y="0"/>
 </item>
-<item historyLabel="DetailForm.java" index="0">
-<position info="not_deleted" x="1715" y="4"/>
+<item historyLabel="strings.xml" index="1"/>
+<item historyLabel="Restaurant.java" index="9">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="DetailForm.java" index="0">
-<position info="not_deleted" x="1712" y="0"/>
-</item>
-<item historyLabel="DetailForm.java" index="0">
-<position info="not_deleted" x="1746" y="0"/>
-</item>
-<item historyLabel="DetailForm.java" index="0">
-<position info="not_deleted" x="1395" y="0"/>
-</item>
-<item historyLabel="LunchList.java" index="1">
-<position info="not_deleted" x="2149" y="0"/>
-</item>
-<item historyLabel="DetailForm.java" index="0">
-<position info="not_deleted" x="1586" y="0"/>
-</item>
-<item historyLabel="RestaurantHelper.java" index="2">
-<position info="not_deleted" x="952" y="0"/>
-</item>
-<item historyLabel="preferences.xml" index="3">
-<position/>
-</item>
-<item historyLabel="option.xml" index="4"/>
-<item historyLabel="preferences.xml" index="3">
-<position/>
-</item>
-<item historyLabel="option.xml" index="4"/>
-<item historyLabel="preferences.xml" index="3">
-<position/>
-</item>
-<item historyLabel="LunchList.java" index="5">
-<position info="not_deleted" x="2129" y="0"/>
-</item>
-<item historyLabel="preferences.xml" index="3">
-<position/>
-</item>
-<item historyLabel="LunchList.java" index="5">
-<position info="not_deleted" x="2129" y="0"/>
-</item>
-<item historyLabel="preferences.xml" index="3">
-<position/>
-</item>
-<item historyLabel="preferences.xml" index="6"/>
-<item historyLabel="option.xml" index="4"/>
-<item historyLabel="arrays.xml" index="7"/>
-<item historyLabel="LunchList.java" index="5">
-<position info="not_deleted" x="2129" y="0"/>
-</item>
-<item historyLabel="DetailForm.java" index="8">
-<position info="not_deleted" x="1586" y="0"/>
-</item>
-<item historyLabel="LunchList.java" index="5">
-<position info="not_deleted" x="235" y="0"/>
+<item historyLabel="RestaurantHelper.java" index="10">
+<position info="not_deleted" x="0" y="0"/>
 </item>
 <item historyLabel="Restaurant.java" index="9">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="RestaurantHelper.java" index="2">
-<position info="not_deleted" x="952" y="0"/>
-</item>
-<item historyLabel="Restaurant.java" index="9">
+<item historyLabel="RestaurantHelper.java" index="10">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="arrays.xml" index="7"/>
-<item historyLabel="option.xml" index="4"/>
-<item historyLabel="preferences.xml" index="6"/>
-<item historyLabel="arrays.xml" index="7"/>
-<item historyLabel="preferences.xml" index="6"/>
-<item historyLabel="EditPreferences" index="10">
-<position info="not_deleted" x="61" y="0"/>
-</item>
-<item historyLabel="EditPreferences.java" index="11">
-<position info="not_deleted" x="148" y="0"/>
-</item>
-<item historyLabel="preferences.xml" index="6"/>
-<item historyLabel="EditPreferences.java" index="12">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="EditPreferences.java" index="12">
-<position info="not_deleted" x="253" y="0"/>
-</item>
-<item historyLabel="EditPreferences.java" index="12">
-<position info="not_deleted" x="294" y="0"/>
-</item>
-<item historyLabel="EditPreferences.java" index="12">
-<position info="not_deleted" x="347" y="0"/>
-</item>
-<item historyLabel="EditPreferences.java" index="12">
-<position info="not_deleted" x="188" y="0"/>
-</item>
-<item historyLabel="EditPreferences.java" index="12">
-<position info="not_deleted" x="358" y="0"/>
-</item>
-<item historyLabel="preferences.xml" index="6"/>
-<item active="true" historyLabel="EditPreferences.java" index="12">
+<item historyLabel="strings.xml" index="1"/>
+<item active="true" historyLabel="RestaurantHelper.java" index="10">
 <position info="not_deleted" x="0" y="0"/>
 </item>
 </navigationHistory>
@@ -372,58 +326,62 @@
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
+<trimArea IMemento.internal.id="16384">
+<trimItem IMemento.internal.id="left"/>
+</trimArea>
 <trimArea IMemento.internal.id="1024">
 <trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
+<trimItem IMemento.internal.id="bottom"/>
 </trimArea>
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EditPreferences.java" tooltip="LunchList/src/apt/tutorial/EditPreferences.java">
-<persistable path="/LunchList/src/apt/tutorial/EditPreferences.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="detail_form.xml" tooltip="LunchList/res/layout/detail_form.xml">
+<persistable path="/LunchList/res/layout/detail_form.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="EditPreferences" tooltip="LunchList/src/apt/tutorial/EditPreferences">
-<persistable path="/LunchList/src/apt/tutorial/EditPreferences"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Restaurant.java" tooltip="LunchList/src/apt/tutorial/Restaurant.java">
-<persistable path="/LunchList/src/apt/tutorial/Restaurant.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.resources.ResourcesEditor" name="arrays.xml" tooltip="LunchList/res/values/arrays.xml">
-<persistable path="/LunchList/res/values/arrays.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.xml.XmlEditor" name="preferences.xml" tooltip="LunchList/res/xml/preferences.xml">
-<persistable path="/LunchList/res/xml/preferences.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.menu.MenuEditor" name="option.xml" tooltip="LunchList/res/menu/option.xml">
-<persistable path="/LunchList/res/menu/option.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RestaurantHelper.java" tooltip="LunchList/src/apt/tutorial/RestaurantHelper.java">
-<persistable path="/LunchList/src/apt/tutorial/RestaurantHelper.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LunchList.java" tooltip="LunchList/src/apt/tutorial/LunchList.java">
-<persistable path="/LunchList/src/apt/tutorial/LunchList.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="R.java" tooltip="LunchList/gen/apt/tutorial/R.java">
+<persistable path="/LunchList/gen/apt/tutorial/R.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="main.xml" tooltip="LunchList/res/layout/main.xml">
 <persistable path="/LunchList/res/layout/main.xml"/>
 </file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.menu.MenuEditor" name="option.xml" tooltip="LunchList/res/menu/option.xml">
+<persistable path="/LunchList/res/menu/option.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.resources.ResourcesEditor" name="arrays.xml" tooltip="LunchList/res/values/arrays.xml">
+<persistable path="/LunchList/res/values/arrays.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ant.ui.internal.editor.AntEditor" name="build.xml" tooltip="LunchList/build.xml">
+<persistable path="/LunchList/build.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.xml.XmlEditor" name="preferences.xml" tooltip="LunchList/res/xml/preferences.xml">
+<persistable path="/LunchList/res/xml/preferences.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RestaurantHelper.java" tooltip="LunchList/src/apt/tutorial/RestaurantHelper.java">
+<persistable path="/LunchList/src/apt/tutorial/RestaurantHelper.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Restaurant.java" tooltip="LunchList/src/apt/tutorial/Restaurant.java">
+<persistable path="/LunchList/src/apt/tutorial/Restaurant.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LunchList.java" tooltip="LunchList/src/apt/tutorial/LunchList.java">
+<persistable path="/LunchList/src/apt/tutorial/LunchList.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EditPreferences.java" tooltip="LunchList/src/apt/tutorial/EditPreferences.java">
+<persistable path="/LunchList/src/apt/tutorial/EditPreferences.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DetailForm.java" tooltip="LunchList/src/apt/tutorial/DetailForm.java">
 <persistable path="/LunchList/src/apt/tutorial/DetailForm.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="detail_form.xml" tooltip="LunchList/res/layout/detail_form.xml">
-<persistable path="/LunchList/res/layout/detail_form.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" name="AndroidManifest.xml" tooltip="LunchList/AndroidManifest.xml">
-<persistable path="/LunchList/AndroidManifest.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="proguard.cfg" tooltip="LunchList/proguard.cfg">
-<persistable path="/LunchList/proguard.cfg"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="row.xml" tooltip="LunchList/res/layout/row.xml">
 <persistable path="/LunchList/res/layout/row.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="R.java" tooltip="LunchList/gen/apt/tutorial/R.java">
-<persistable path="/LunchList/gen/apt/tutorial/R.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.resources.ResourcesEditor" name="strings.xml" tooltip="LunchList/res/values/strings.xml">
+<persistable path="/LunchList/res/values/strings.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.systemExternalEditor" name="ball_green.png" tooltip="LunchList/res/drawable/ball_green.png">
+<persistable path="/LunchList/res/drawable/ball_green.png"/>
 </file>
 </mruList>
 </workbench>

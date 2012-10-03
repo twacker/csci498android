@@ -68,7 +68,7 @@ class RestaurantHelper extends SQLiteOpenHelper {
 		cv.put( "@string/typecol", type );
 		cv.put( "@string/notecol", notes );
 
-		getWritableDatabase().update( "@string/db", cv, "@string/condition", args );
+		getWritableDatabase().update( "@string/db", cv, "_ID=?", args );
 
 	}
 
