@@ -31,7 +31,7 @@ public class DetailForm extends Activity {
 		save.setOnClickListener( onSave );
 
 		restaurantId = getIntent().getStringExtra( LunchList.ID_EXTRA );
-		if ( restaurantId != null ) {
+		if( restaurantId != null ) {
 			load();
 		}
 	}
@@ -41,32 +41,17 @@ public class DetailForm extends Activity {
 		super.onDestroy();
 		helper.close();
 	}
-
+	
 	@Override
-	public void onSaveInstanceState( Bundle state ) {
+	public void onSaveInstanceState(Bundle state) {
 		super.onSaveInstanceState( state );
-
-		state.putString( "@string/namecol", name.getText().toString() );
-		state.putString( "@string/addrcol", address.getText().toString() );
-		state.putString( "@string/notecol", notes.getText().toString() );
-		state.putInt( "@string/typecol", types.getCheckedRadioButtonId() );
-	}
-
-	@Override
-	public void onRestoreInstanceState( Bundle state ) {
-		super.onRestoreInstanceState( state );
-
-		name.setText( state.getString( "@string/namecol" ) );
-		address.setText( state.getString( "@string/addrcol" ) );
-		notes.setText( state.getString( "@string/notecol" ) );
-		types.check( state.getInt( "@string/typecol" ) );
 	}
 
 	private View.OnClickListener onSave = new View.OnClickListener() {
 
 		public void onClick( View v ) {
 			String type = null;
-			switch ( types.getCheckedRadioButtonId() ) {
+			switch( types.getCheckedRadioButtonId() ) {
 			case R.id.sit_down :
 				type = "@strings/sit_down";
 				break;
@@ -78,7 +63,7 @@ public class DetailForm extends Activity {
 				break;
 			}
 
-			if ( restaurantId == null ) {
+			if( restaurantId == null ) {
 				helper.insert( name.getText().toString(), address.getText().toString(), type, notes.getText().toString() );
 			} else {
 				helper.update( restaurantId, name.getText().toString(), address.getText().toString(), type, notes.getText().toString() );
@@ -95,9 +80,9 @@ public class DetailForm extends Activity {
 		address.setText( helper.getAddress( c ) );
 		notes.setText( helper.getNotes( c ) );
 
-		if ( helper.getType( c ).equals( "@strings/sit_down" ) ) {
+		if( helper.getType( c ).equals( "@strings/sit_down" ) ) {
 			types.check( R.id.sit_down );
-		} else if ( helper.getType( c ).equals( "@strings/take_out" ) ) {
+		} else if( helper.getType( c ).equals( "@strings/take_out" ) ) {
 			types.check( R.id.take_out );
 		} else {
 			types.check( R.id.delivery );
@@ -105,5 +90,4 @@ public class DetailForm extends Activity {
 
 		c.close();
 	}
-
 }
