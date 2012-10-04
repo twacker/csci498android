@@ -60,10 +60,6 @@ class RestaurantHelper extends SQLiteOpenHelper {
 	public String getNotes( Cursor c ) {
 		return c.getString( 4 );
 	}
-	
-	public String getFeed( Cursor c ) {
-		return c.getString( 5 );
-	}
 
 	public Cursor getById( String id ) {
 		String[] args = { id };

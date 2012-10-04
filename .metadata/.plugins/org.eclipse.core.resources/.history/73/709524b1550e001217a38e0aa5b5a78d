@@ -45,7 +45,6 @@
     <string name="addrcol">address</string>
     <string name="typecol">type</string>
     <string name="notecol">notes</string>
-    <string name="feedcol">feed</string>
     <string name="db">restaurants</string>
     <string name="condition">_ID=?</string>
     

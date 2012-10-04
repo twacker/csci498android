@@ -60,17 +60,13 @@ class RestaurantHelper extends SQLiteOpenHelper {
 	public String getNotes( Cursor c ) {
 		return c.getString( 4 );
 	}
-	
-	public String getFeed( Cursor c ) {
-		return c.getString( 5 );
-	}
 
 	public Cursor getById( String id ) {
 		String[] args = { id };
 		return getReadableDatabase().rawQuery( "@string/getbyid", args );
 	}
 
-	public void update( String id, String name, String address, String type, String notes, String feed ) {
+	public void update( String id, String name, String address, String type, String notes ) {
 		ContentValues cv = new ContentValues();
 		String[] args = { id };
 
@@ -78,7 +74,6 @@ class RestaurantHelper extends SQLiteOpenHelper {
 		cv.put( "@string/addrcol", address );
 		cv.put( "@string/typecol", type );
 		cv.put( "@string/notecol", notes );
-		cv.put( "@string/feedcol", feed );
 
 		getWritableDatabase().update( "@string/db", cv, "@string/condition", args );
 

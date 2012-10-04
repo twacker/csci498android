@@ -37,15 +37,13 @@
     
     <!-- RestaurantHelper.java -->
     <string name="dbname">lunchlist.db</string>
-    <string name="createtable">CREATE TABLE restaurants (_id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, address TEXT, type TEXT, notes TEXT, feed TEXT);</string>
-    <string name="getall">SELECT _id, name, address, type, notes, feed FROM restaurants ORDER BY </string>
-    <string name="getbyid">SELECT _id, name, address, type, notes, feed FROM restaurants WHERE _id=?</string>
-    <string name="dbupdate2">ALTER TABLE restaurants ADD COLUMN feed TEXT</string>
+    <string name="createtable">CREATE TABLE restaurants (_id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, address TEXT, type TEXT, notes TEXT);</string>
+    <string name="getall">SELECT _id, name, address, type, notes FROM restaurants ORDER BY </string>
+    <string name="getbyid">Select _id, name, address, type, notes FROM restaurants WHERE _id=?</string>
     <string name="namecol">name</string>
     <string name="addrcol">address</string>
     <string name="typecol">type</string>
     <string name="notecol">notes</string>
-    <string name="feedcol">feed</string>
     <string name="db">restaurants</string>
     <string name="condition">_ID=?</string>
     
