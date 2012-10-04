@@ -62,7 +62,7 @@
 
         <EditText
             android:id="@+id/feed"
-            android:hint="@string/feedhint" />
+            android:hint="Feed URL" />
 
         <Button
             android:id="@+id/save"

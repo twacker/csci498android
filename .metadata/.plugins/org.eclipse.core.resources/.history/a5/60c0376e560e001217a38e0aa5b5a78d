@@ -60,10 +60,6 @@
                 android:singleLine="false" />
         </TableRow>
 
-        <EditText
-            android:id="@+id/feed"
-            android:hint="@string/feedhint" />
-
         <Button
             android:id="@+id/save"
             android:layout_width="match_parent"
