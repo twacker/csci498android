@@ -4,7 +4,6 @@ import android.app.*;
 import android.os.*;
 import android.util.Log;
 import android.view.*;
-import android.widget.*;
 import org.mcsoxford.rss.*;
 
 public class FeedActivity extends ListActivity {
