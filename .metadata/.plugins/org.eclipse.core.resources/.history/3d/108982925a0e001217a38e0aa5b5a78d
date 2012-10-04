@@ -2,9 +2,8 @@ package apt.tutorial;
 
 import android.app.Activity;
 import android.database.Cursor;
-import android.net.*;
+import android.net.ConnectivityManager;
 import android.os.Bundle;
-import android.content.Intent;
 import android.view.*;
 import android.widget.*;
 
@@ -88,9 +87,9 @@ public class DetailForm extends Activity {
 	}
 
 	private boolean isNetworkAvailable() {
-		ConnectivityManager cm = ( ConnectivityManager ) getSystemService( CONNECTIVITY_SERVICE );
-		NetworkInfo info = cm.getActiveNetworkInfo();
-		return info != null;
+		ConnectivityManager cm = (ConnectivityManager) getSystemService(CONNECTIVITY_SERVICE);
+		NetworkInfo info - cm.getActiveNetworkInfo();
+		return infor!= null;
 	}
 
 	private View.OnClickListener onSave = new View.OnClickListener() {

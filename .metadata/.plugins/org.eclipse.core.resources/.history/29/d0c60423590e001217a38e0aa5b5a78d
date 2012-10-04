@@ -24,9 +24,7 @@
     <string name="id_extra">apt.tutorial._ID</string>
     <string name="sortorder">sort_order</string>
     <!-- uses some from DetailsForm and RestaurantHelper -->
-    
-    <!-- details_option.xml -->
-    <string name="rssfeed">RSS Feed</string>
+
 
     <!-- main.xml -->
     <string name="emptylistmsg">Click the MENU button to add a restaurant!</string>

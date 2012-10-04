@@ -1,0 +1,7 @@
+package apt.tutorial;
+
+import android.app.ListActivity;
+
+public class FeedActivity extends ListActivity {
+
+}

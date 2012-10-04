@@ -88,9 +88,9 @@ public class DetailForm extends Activity {
 	}
 
 	private boolean isNetworkAvailable() {
-		ConnectivityManager cm = ( ConnectivityManager ) getSystemService( CONNECTIVITY_SERVICE );
-		NetworkInfo info = cm.getActiveNetworkInfo();
-		return info != null;
+		ConnectivityManager cm = (ConnectivityManager) getSystemService(CONNECTIVITY_SERVICE);
+		NetworkInfo info - cm.getActiveNetworkInfo();
+		return infor!= null;
 	}
 
 	private View.OnClickListener onSave = new View.OnClickListener() {
