@@ -10,7 +10,7 @@ import org.mcsoxford.rss.*;
 public class FeedActivity extends ListActivity {
 
 	private InstanceState state = null;
-	public static final String FEED_URL = "@string/feedurl";
+	public static final String FEED_URL = "apt.tutorial.FEED_URL";
 
 	@Override
 	public void onCreate( Bundle savedInstanceState ) {
@@ -46,7 +46,7 @@ public class FeedActivity extends ListActivity {
 	private void goBlooey( Throwable t ) {
 		AlertDialog.Builder builder = new AlertDialog.Builder( this );
 
-		builder.setTitle( "@string/except" ).setMessage( t.toString() ).setPositiveButton( "OK", null ).show();
+		builder.setTitle( "Exception!" ).setMessage( t.toString() ).setPositiveButton( "OK", null ).show();
 	}
 
 	private static class InstanceState {
@@ -87,7 +87,6 @@ public class FeedActivity extends ListActivity {
 			if ( e == null ) {
 				activity.setFeed( feed );
 			} else {
-				//not pushing to strings.xml because this is the spot you want to be directed to to see the error
 				Log.e( "LunchList", "Exception parsing feed", e );
 				activity.goBlooey( e );
 			}

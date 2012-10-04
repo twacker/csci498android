@@ -87,7 +87,6 @@ public class FeedActivity extends ListActivity {
 			if ( e == null ) {
 				activity.setFeed( feed );
 			} else {
-				//not pushing to strings.xml because this is the spot you want to be directed to to see the error
 				Log.e( "LunchList", "Exception parsing feed", e );
 				activity.goBlooey( e );
 			}
