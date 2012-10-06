@@ -6,7 +6,7 @@ import android.database.sqlite.*;
 
 class RestaurantHelper extends SQLiteOpenHelper {
 	private static final String DATABASE_NAME = "@string/dbname";
-	private static final int SCHEMA_VERSION = 2;
+	private static final int SCHEMA_VERSION = 3;
 
 	public RestaurantHelper( Context context ) {
 		super( context, DATABASE_NAME, null, SCHEMA_VERSION );
@@ -22,6 +22,9 @@ class RestaurantHelper extends SQLiteOpenHelper {
 		switch ( oldVersion ) {
 		case 2 :
 			db.execSQL( "@string/dbupdate2" );
+		case 3 :
+			db.execSQL( "@string/dbupdate3_1" );
+			db.execSQL( "@string/dbupdate3_2" );
 		default :
 			// do nothing
 			break;
@@ -60,9 +63,25 @@ class RestaurantHelper extends SQLiteOpenHelper {
 	public String getNotes( Cursor c ) {
 		return c.getString( 4 );
 	}
-	
+
 	public String getFeed( Cursor c ) {
 		return c.getString( 5 );
+	}
+
+	public double getLatitude( Cursor c ) {
+		return c.getDouble( 6 );
+	}
+
+	public double getLongitude( Cursor c ) {
+		return c.getDouble( 7 );
+	}
+
+	public void updateLocation( String id, double lat, double lon ) {
+		ContentValues cv = new ContentValues();
+		String[] args = { id };
+		cv.put( "@string/latcol", lat );
+		cv.put( "@string/loncol", lon );
+		getWritableDatabase().update( "@string/db", cv, "@string/condition", args );
 	}
 
 	public Cursor getById( String id ) {

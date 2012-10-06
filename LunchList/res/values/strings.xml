@@ -9,6 +9,8 @@
     <string name="notes_">Notes:</string>
     <string name="savebutton">Save</string>
     <string name="type_">Type:</string>
+    <string name="loc_">Location:</string>
+    <string name="noloc">(not set)</string>
     <string name="notehint">Notes</string>
     <string name="feedhint">Feed URL</string>
     <string name="takeout">Take-Out</string>
@@ -27,6 +29,7 @@
     
     <!-- details_option.xml -->
     <string name="rssfeed">RSS Feed</string>
+    <string name="saveloc">Save Location</string>
     
     <!-- FeedActivity.java -->
     <string name="feedurl">apt.tutorial.FEED_URL</string>
@@ -46,15 +49,19 @@
 
     <!-- RestaurantHelper.java -->
     <string name="dbname">lunchlist.db</string>
-    <string name="createtable">CREATE TABLE restaurants (_id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, address TEXT, type TEXT, notes TEXT, feed TEXT);</string>
-    <string name="getall">SELECT _id, name, address, type, notes, feed FROM restaurants ORDER BY </string>
-    <string name="getbyid">SELECT _id, name, address, type, notes, feed FROM restaurants WHERE _id=?</string>
+    <string name="createtable">CREATE TABLE restaurants (_id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, address TEXT, type TEXT, notes TEXT, feed TEXT, lat REAL, lon REAL);</string>
+    <string name="getall">SELECT _id, name, address, type, notes, feed, lat, lon FROM restaurants ORDER BY </string>
+    <string name="getbyid">SELECT _id, name, address, type, notes, feed, lat, lon FROM restaurants WHERE _id=?</string>
     <string name="dbupdate2">ALTER TABLE restaurants ADD COLUMN feed TEXT</string>
+    <string name="dbupdate3_1">ALTER TABLE restaurants ADD COLUMN lat REAL</string>
+    <string name="dbupdate3_2">ALTER TABLE restaurants ADD COLUMN lon REAL</string>
     <string name="namecol">name</string>
     <string name="addrcol">address</string>
     <string name="typecol">type</string>
     <string name="notecol">notes</string>
     <string name="feedcol">feed</string>
+    <string name="latcol">lat</string>
+    <string name="loncol">lon</string>
     <string name="db">restaurants</string>
     <string name="condition">_ID=?</string>
 

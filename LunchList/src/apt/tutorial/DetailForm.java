@@ -2,6 +2,7 @@ package apt.tutorial;
 
 import android.app.Activity;
 import android.database.Cursor;
+import android.location.*;
 import android.net.*;
 import android.os.Bundle;
 import android.content.Intent;
@@ -14,9 +15,11 @@ public class DetailForm extends Activity {
 	EditText address = null;
 	EditText notes = null;
 	EditText feed = null;
+	TextView location = null;
 	RadioGroup types = null;
 	RestaurantHelper helper = null;
 	String restaurantId = null;
+	LocationManager locMgr = null;
 
 	@Override
 	public void onCreate( Bundle savedInstanceState ) {
@@ -29,10 +32,9 @@ public class DetailForm extends Activity {
 		notes = ( EditText ) findViewById( R.id.notes );
 		types = ( RadioGroup ) findViewById( R.id.types );
 		feed = ( EditText ) findViewById( R.id.feed );
+		location = ( TextView ) findViewById( R.id.location );
 
-		Button save = ( Button ) findViewById( R.id.save );
-
-		save.setOnClickListener( onSave );
+		locMgr = ( LocationManager ) getSystemService( LOCATION_SERVICE );
 
 		restaurantId = getIntent().getStringExtra( LunchList.ID_EXTRA );
 		if ( restaurantId != null ) {
@@ -44,6 +46,12 @@ public class DetailForm extends Activity {
 	public void onDestroy() {
 		super.onDestroy();
 		helper.close();
+	}
+
+	@Override
+	public void onPause() {
+		save();
+		super.onPause();
 	}
 
 	@Override
@@ -83,9 +91,41 @@ public class DetailForm extends Activity {
 				Toast.makeText( this, "Sorry, the Internet is not available", Toast.LENGTH_LONG ).show();
 			}
 			return true;
+		} else if ( item.getItemId() == R.id.location ) {
+			locMgr.requestLocationUpdates( LocationManager.GPS_PROVIDER, 0, 0, onLocationChange );
+			return true;
 		}
 		return super.onOptionsItemSelected( item );
 	}
+
+	//@Override //eclipse doesn't like the annotation for this method
+	public boolean onPreapareOptionsMenu( Menu menu ) {
+		if ( restaurantId == null ) {
+			menu.findItem( R.id.location ).setEnabled( false );
+		}
+		return super.onPrepareOptionsMenu( menu );
+	}
+
+	LocationListener onLocationChange = new LocationListener() {
+		public void onLocationChanged( Location fix ) {
+			helper.updateLocation( restaurantId, fix.getLatitude(), fix.getLongitude() );
+			location.setText( String.valueOf( fix.getLatitude() ) + ", " + String.valueOf( fix.getLongitude() ) );
+			locMgr.removeUpdates( onLocationChange );
+			Toast.makeText( DetailForm.this, "Location saved", Toast.LENGTH_LONG ).show();
+		}
+
+		public void onProviderDisabled( String provider ) {
+			// required for interface, not used
+		}
+
+		public void onProviderEnabled( String provider ) {
+			// required for interface, not used
+		}
+
+		public void onStatusChanged( String provider, int status, Bundle extras ) {
+			// required for interface, not used
+		}
+	};
 
 	private boolean isNetworkAvailable() {
 		ConnectivityManager cm = ( ConnectivityManager ) getSystemService( CONNECTIVITY_SERVICE );
@@ -93,9 +133,8 @@ public class DetailForm extends Activity {
 		return info != null;
 	}
 
-	private View.OnClickListener onSave = new View.OnClickListener() {
-
-		public void onClick( View v ) {
+	private void save() {
+		if ( name.getText().toString().length() > 0 ) {
 			String type = null;
 			switch ( types.getCheckedRadioButtonId() ) {
 			case R.id.sit_down :
@@ -114,9 +153,8 @@ public class DetailForm extends Activity {
 			} else {
 				helper.update( restaurantId, name.getText().toString(), address.getText().toString(), type, notes.getText().toString(), feed.getText().toString() );
 			}
-			finish();
 		}
-	};
+	}
 
 	private void load() {
 		Cursor c = helper.getById( restaurantId );
@@ -134,6 +172,8 @@ public class DetailForm extends Activity {
 		} else {
 			types.check( R.id.delivery );
 		}
+
+		location.setText( String.valueOf( helper.getLatitude( c ) + ", " + String.valueOf( helper.getLongitude( c ) ) ) );
 
 		c.close();
 	}
