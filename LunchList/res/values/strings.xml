@@ -27,6 +27,10 @@
     
     <!-- details_option.xml -->
     <string name="rssfeed">RSS Feed</string>
+    
+    <!-- FeedActivity.java -->
+    <string name="feedurl">apt.tutorial.FEED_URL</string>
+    <string name="except">Exception!</string>
 
     <!-- main.xml -->
     <string name="emptylistmsg">Click the MENU button to add a restaurant!</string>

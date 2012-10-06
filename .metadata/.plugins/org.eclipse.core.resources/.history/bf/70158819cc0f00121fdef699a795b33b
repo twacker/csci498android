@@ -1,0 +1,29 @@
+package apt.tutorial;
+
+import android.app.IntentService;
+import android.content.Intent;
+
+public class FeedService extends IntentService {
+	
+	public static final String EXTRA_URL = "apt.tutorial.EXTRA_URL";
+	
+	public FeedService() {
+		super( "FeedService" );
+	}
+
+	@Override
+	public void onHandleIntent( Intent i ) {
+		// do something
+	}
+	
+	@Override
+	public void onHandelIntent(Intent i){
+		RSSReader reader = new RSSReader();
+		try{
+			RSSFeed result = reader.load(i.getStringExtra(EXTRA_URL));
+		} catch (Exception e) {
+			Log.e("LunchList","Exception parsing feed", e);
+		}
+	}
+	
+}
