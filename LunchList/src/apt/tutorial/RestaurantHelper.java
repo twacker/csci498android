@@ -5,7 +5,7 @@ import android.database.*;
 import android.database.sqlite.*;
 
 class RestaurantHelper extends SQLiteOpenHelper {
-	private static final String DATABASE_NAME = "@string/dbname";
+	private static final String DATABASE_NAME = "lunchlist.db";
 	private static final int SCHEMA_VERSION = 3;
 
 	public RestaurantHelper( Context context ) {
@@ -14,17 +14,20 @@ class RestaurantHelper extends SQLiteOpenHelper {
 
 	@Override
 	public void onCreate( SQLiteDatabase db ) {
-		db.execSQL( "@string/createtable" );
+		db.execSQL( "DROP TABLE IF EXISTS " + DATABASE_NAME );
+		db.execSQL( "CREATE TABLE restaurants (_id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, address TEXT, type TEXT, notes TEXT, feed TEXT, lat REAL, lon REAL);" );
 	}
 
 	@Override
 	public void onUpgrade( SQLiteDatabase db, int oldVersion, int newVersion ) {
 		switch ( oldVersion ) {
+		case 0 :
+		case 1 :
 		case 2 :
-			db.execSQL( "@string/dbupdate2" );
+			db.execSQL( "ALTER TABLE restaurants ADD COLUMN feed TEXT" );
 		case 3 :
-			db.execSQL( "@string/dbupdate3_1" );
-			db.execSQL( "@string/dbupdate3_2" );
+			db.execSQL( "ALTER TABLE restaurants ADD COLUMN lat REAL" );
+			db.execSQL( "ALTER TABLE restaurants ADD COLUMN lon REAL" );
 		default :
 			// do nothing
 			break;
@@ -34,18 +37,18 @@ class RestaurantHelper extends SQLiteOpenHelper {
 	public void insert( String name, String address, String type, String notes, String feed ) {
 		ContentValues cv = new ContentValues();
 
-		cv.put( "@string/namecol", name );
-		cv.put( "@string/addrcol", address );
-		cv.put( "@string/typecol", type );
-		cv.put( "@string/notecol", notes );
-		cv.put( "@string/feedcol", feed );
+		cv.put( "name", name );
+		cv.put( "address", address );
+		cv.put( "type", type );
+		cv.put( "notes", notes );
+		cv.put( "feed", feed );
 
-		getWritableDatabase().insert( "@string/db", "name", cv );
+		getWritableDatabase().insert( "restaurants", "name", cv );
 	}
 
 	public Cursor getAll( String orderBy ) {
 		// DO NOT end the query string with ; (looked up on docs)
-		return getReadableDatabase().rawQuery( "@string/getall" + orderBy, null );
+		return getReadableDatabase().rawQuery( "SELECT _id, name, address, type, notes, lat, lon FROM restaurants ORDER BY " + orderBy, null );
 	}
 
 	public String getName( Cursor c ) {
@@ -79,27 +82,27 @@ class RestaurantHelper extends SQLiteOpenHelper {
 	public void updateLocation( String id, double lat, double lon ) {
 		ContentValues cv = new ContentValues();
 		String[] args = { id };
-		cv.put( "@string/latcol", lat );
-		cv.put( "@string/loncol", lon );
-		getWritableDatabase().update( "@string/db", cv, "@string/condition", args );
+		cv.put( "lat", lat );
+		cv.put( "lon", lon );
+		getWritableDatabase().update( "restaurants", cv, "_ID=?", args );
 	}
 
 	public Cursor getById( String id ) {
 		String[] args = { id };
-		return getReadableDatabase().rawQuery( "@string/getbyid", args );
+		return getReadableDatabase().rawQuery( "SELECT _id, name, address, type, notes, feed, lat, lon FROM restaurants WHERE _id=?", args );
 	}
 
 	public void update( String id, String name, String address, String type, String notes, String feed ) {
 		ContentValues cv = new ContentValues();
 		String[] args = { id };
 
-		cv.put( "@string/namecol", name );
-		cv.put( "@string/addrcol", address );
-		cv.put( "@string/typecol", type );
-		cv.put( "@string/notecol", notes );
-		cv.put( "@string/feedcol", feed );
+		cv.put( "name", name );
+		cv.put( "address", address );
+		cv.put( "type", type );
+		cv.put( "notes", notes );
+		cv.put( "feed", feed );
 
-		getWritableDatabase().update( "@string/db", cv, "@string/condition", args );
+		getWritableDatabase().update( "restaurants", cv, "_ID=?", args );
 
 	}
 

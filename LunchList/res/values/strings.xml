@@ -30,6 +30,7 @@
     <!-- details_option.xml -->
     <string name="rssfeed">RSS Feed</string>
     <string name="saveloc">Save Location</string>
+    <string name="showmap">Show on Map</string>
     
     <!-- FeedActivity.java -->
     <string name="feedurl">apt.tutorial.FEED_URL</string>
@@ -50,7 +51,7 @@
     <!-- RestaurantHelper.java -->
     <string name="dbname">lunchlist.db</string>
     <string name="createtable">CREATE TABLE restaurants (_id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, address TEXT, type TEXT, notes TEXT, feed TEXT, lat REAL, lon REAL);</string>
-    <string name="getall">SELECT _id, name, address, type, notes, feed, lat, lon FROM restaurants ORDER BY </string>
+    <string name="getall">SELECT _id, name, address, type, notes, lat, lon FROM restaurants ORDER BY </string>
     <string name="getbyid">SELECT _id, name, address, type, notes, feed, lat, lon FROM restaurants WHERE _id=?</string>
     <string name="dbupdate2">ALTER TABLE restaurants ADD COLUMN feed TEXT</string>
     <string name="dbupdate3_1">ALTER TABLE restaurants ADD COLUMN lat REAL</string>

@@ -3,26 +3,26 @@
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="257" key="DIALOG_WIDTH"/>
 		<item value="90" key="DIALOG_Y_ORIGIN"/>
-		<item value="765" key="DIALOG_X_ORIGIN"/>
 		<item value="380" key="DIALOG_HEIGHT"/>
+		<item value="765" key="DIALOG_X_ORIGIN"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="true" key="wrap"/>
-		<item value="true" key="casesensitive"/>
 		<item value="false" key="isRegEx"/>
+		<item value="true" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="&quot;" key="selection"/>
+		<item value="@" key="selection"/>
 		<list key="findhistory">
+			<item value="@"/>
+			<item value="getalln"/>
+			<item value="getall"/>
+			<item value="dbname"/>
+			<item value="save"/>
+			<item value="oncreateop"/>
 			<item value="&quot;"/>
 			<item value="strings"/>
-			<item value="oncreateopt"/>
-			<item value="onListClick"/>
-			<item value="insert"/>
-			<item value="onsave"/>
-			<item value="startwork"/>
-			<item value="oncreateoptions"/>
 		</list>
 		<list key="replacehistory">
 			<item value="string"/>

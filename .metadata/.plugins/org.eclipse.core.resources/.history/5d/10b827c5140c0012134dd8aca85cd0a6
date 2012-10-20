@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="app_name">LunchList</string>
-    <!-- details form -->
-    <string name="name?">Name:</string>
-    <string name="address?">Address:</string>
-    <string name="notes?">Notes:</string>
-    <string name="savebutton">Save</string>
-</resources>
