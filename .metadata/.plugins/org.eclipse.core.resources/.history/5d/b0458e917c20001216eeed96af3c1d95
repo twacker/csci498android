@@ -1,0 +1,10 @@
+package apt.tutorial;
+
+import android.content.*;
+
+public class OnBootReceiver extends BroadcastReceiver {
+	@Override
+	public void onRecieve( Context ctxt, Intent intent ) {
+		// do something
+	}
+}

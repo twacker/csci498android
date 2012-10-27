@@ -6,7 +6,7 @@
         android:entryValues="@array/sort_clauses"
         android:key="sort_order"
         android:summary="@string/sortsummary"
-        android:title="@string/sorttitle" />
+        android:title="@string/sorttitle" /"
     <CheckBoxPreference 
         android:key="alarm"
         android:title="Sound a Lunch Alarm"
