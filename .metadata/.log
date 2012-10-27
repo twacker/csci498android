@@ -10740,3 +10740,13 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.e
 
 !ENTRY org.eclipse.m2e.logback.appender 4 0 2012-10-20 10:51:47.811
 !MESSAGE Unable to update index for central|http://repo1.maven.org/maven2
+!SESSION 2012-10-27 14:49:03.554 -----------------------------------------------
+eclipse.buildId=M20110909-1335
+java.version=1.7.0_02
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-10-27 14:49:26.429
+!MESSAGE Unable to update index for central|http://repo1.maven.org/maven2
