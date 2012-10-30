@@ -1,16 +1,15 @@
 package apt.tutorial;
 
-import android.content.*;
-import android.app.*;
+import android.app.AlarmManager;
+import android.app.PendingIntent;
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 import java.util.Calendar;
 
 public class OnBootReceiver extends BroadcastReceiver {
-	@Override
-	public void onReceive( Context ctxt, Intent intent ) {
-		setAlarm( ctxt );
-	}
-
 	public static void setAlarm( Context ctxt ) {
 		AlarmManager mgr = ( AlarmManager ) ctxt.getSystemService( Context.ALARM_SERVICE );
 		Calendar cal = Calendar.getInstance();
@@ -36,4 +35,8 @@ public class OnBootReceiver extends BroadcastReceiver {
 		return( PendingIntent.getBroadcast( ctxt, 0, i, 0 ) );
 	}
 
+	@Override
+	public void onReceive( Context ctxt, Intent intent ) {
+		setAlarm( ctxt );
+	}
 }

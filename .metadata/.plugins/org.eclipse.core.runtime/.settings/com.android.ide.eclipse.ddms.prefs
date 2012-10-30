@@ -1,5 +1,8 @@
-#Sat Oct 20 11:36:48 MDT 2012
+#Mon Oct 29 20:30:01 MDT 2012
+logcat.view.colsize.Level=22
 eclipse.preferences.version=1
 logcat.view.colsize.Application=143
-logcat.view.colsize.Time=146
+logcat.view.colsize.Time=155
+logcat.view.colsize.Tag=119
 logcat.view.colsize.Text=498
+logcat.view.colsize.PID=50

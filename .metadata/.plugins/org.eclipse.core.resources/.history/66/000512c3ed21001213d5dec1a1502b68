@@ -1,0 +1,28 @@
+package apt.ToDoList;
+
+import android.app.ListActivity;
+import android.database.Cursor;
+import android.os.Bundle;
+
+public class ToDoReadView extends ListActivity {
+
+	Cursor todo = null;
+	
+	ToDoItemHelper helper = null;
+
+	@Override
+	public void onCreate( Bundle savedInstanceState ) {
+		super.onCreate( savedInstanceState );
+		helper = new ToDoItemHelper( this );
+		
+	}
+
+	private void initList() {
+		if ( todo != null ) {
+			stopManagingCursor( todo );
+			todo.close();
+		}
+		todo = helper
+	}
+
+}

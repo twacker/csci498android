@@ -7,15 +7,24 @@
         android:key="sort_order"
         android:summary="@string/sortsummary"
         android:title="@string/sorttitle" />
-    <CheckBoxPreference 
+
+    <CheckBoxPreference
         android:key="alarm"
-        android:title="Sound a Lunch Alarm"
-        android:summary="Check if you want to know when it is time for lunch" />
+        android:summary="Check if you want to know when it is time for lunch"
+        android:title="Sound a Lunch Alarm" />
+
     <apt.tutorial.TimePreference
-        android:key="alarm_time"
-        android:title="Lunch Alarm Time"
         android:defaultValue="12:00"
+        android:dependency="alarm"
+        android:key="alarm_time"
         android:summary="Set your desired time for the lunch alarm"
-        android:dependency="alarm" />
+        android:title="Lunch Alarm Time" />
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:dependency="alarm"
+        android:key="use_notification"
+        android:summary="Check if you want a status bar icon at lunchtime, or uncheck for a full_screen notice"
+        android:title="Use a Notification" />
 
 </PreferenceScreen>
