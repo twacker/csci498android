@@ -2,6 +2,7 @@
 <resources>
 
     <string name="app_name">LunchList</string>
+    <string name="empty">No restaurants!</string>
 
     <!-- details_form.xml -->
     <string name="name_">Name:</string>
