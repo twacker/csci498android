@@ -2,8 +2,8 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="257" key="DIALOG_WIDTH"/>
-		<item value="90" key="DIALOG_Y_ORIGIN"/>
-		<item value="765" key="DIALOG_X_ORIGIN"/>
+		<item value="95" key="DIALOG_Y_ORIGIN"/>
+		<item value="929" key="DIALOG_X_ORIGIN"/>
 		<item value="380" key="DIALOG_HEIGHT"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 	</section>
@@ -13,16 +13,16 @@
 		<item value="false" key="isRegEx"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="" key="selection"/>
+		<item value="PARENT_ID_EXTRA" key="selection"/>
 		<list key="findhistory">
-			<item value="icon"/>
-			<item value="name"/>
+			<item value="PARENT_ID_EXTRA"/>
+			<item value="parentId"/>
+			<item value="move"/>
+			<item value="save"/>
+			<item value="add"/>
+			<item value="id"/>
 			<item value="RestaurantHelper"/>
-			<item value="RestaurantHolder"/>
-			<item value="RestaurantAdapter"/>
-			<item value="adapter"/>
-			<item value="initList"/>
-			<item value="@"/>
+			<item value="icon"/>
 		</list>
 		<list key="replacehistory">
 			<item value="string"/>
