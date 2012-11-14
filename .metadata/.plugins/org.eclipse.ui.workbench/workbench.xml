@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="16" version="2.0">
+<workbench progressCount="31" version="2.0">
 <workbenchAdvisor/>
-<window height="728" minimized="true" width="683" x="0" y="0">
+<window height="728" width="683" x="0" y="0">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -26,8 +26,8 @@
 <coolItem id="org.eclipse.ui.browser.editor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="com.android.ide.eclipse.editors.layout.LayoutEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="com.android.ide.eclipse.editors.layout.LayoutEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.PropertiesFileEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
@@ -39,34 +39,12 @@
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
-<part id="1"/>
-<part id="2"/>
-<part id="3"/>
-<part id="4"/>
-<part id="5"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="widget.xml" partName="widget.xml" path="C:/Users/Dale Anderson/Documents/GitHub/csci498android/LunchList/res/layout/widget.xml" title="widget.xml" tooltip="LunchList/res/layout/widget.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/LunchList/res/layout/widget.xml"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AppWidget.java" partName="AppWidget.java" path="C:/Users/Dale Anderson/Documents/GitHub/csci498android/LunchList/src/apt/tutorial/AppWidget.java" title="AppWidget.java" tooltip="LunchList/src/apt/tutorial/AppWidget.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/LunchList/src/apt/tutorial/AppWidget.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="400" selectionTopPixel="0"/>
-</editor>
-<editor id="com.android.ide.eclipse.editors.xml.XmlEditor" name="widget_provider.xml" partName="widget_provider.xml" path="C:/Users/Dale Anderson/Documents/GitHub/csci498android/LunchList/res/xml/widget_provider.xml" title="widget_provider.xml" tooltip="LunchList/res/xml/widget_provider.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/LunchList/res/xml/widget_provider.xml"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="WidgetService.java" partName="WidgetService.java" path="C:/Users/Dale Anderson/Documents/GitHub/csci498android/LunchList/src/apt/tutorial/WidgetService.java" title="WidgetService.java" tooltip="LunchList/src/apt/tutorial/WidgetService.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/LunchList/src/apt/tutorial/WidgetService.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1704" selectionTopPixel="218"/>
-</editor>
-<editor id="com.android.ide.eclipse.editors.resources.ResourcesEditor" name="strings.xml" partName="strings.xml" path="C:/Users/Dale Anderson/Documents/GitHub/csci498android/LunchList/res/values/strings.xml" title="strings.xml" tooltip="LunchList/res/values/strings.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/LunchList/res/values/strings.xml"/>
-</editor>
-<editor activePart="true" focus="true" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" name="AndroidManifest.xml" partName="LunchList Manifest" path="C:/Users/Dale Anderson/Documents/GitHub/csci498android/LunchList/AndroidManifest.xml" title="LunchList Manifest" tooltip="LunchList/AndroidManifest.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/LunchList/AndroidManifest.xml"/>
+<editor activePart="true" focus="true" id="com.android.ide.eclipse.editors.xml.XmlEditor" name="widget_provider.xml" partName="widget_provider.xml" path="C:/Users/Dale Anderson/Documents/GitHub/csci498android/LunchList/res/xml-v11/widget_provider.xml" title="widget_provider.xml" tooltip="LunchList/res/xml-v11/widget_provider.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/LunchList/res/xml-v11/widget_provider.xml"/>
 </editor>
 </editors>
 <views>
@@ -106,7 +84,7 @@
 </viewState>
 </view>
 </views>
-<perspectives activePart="com.android.ide.eclipse.editors.manifest.ManifestEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
+<perspectives activePart="com.android.ide.eclipse.editors.xml.XmlEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.jdt.internal.ui.JavaPerspectiveFactory" id="org.eclipse.jdt.ui.JavaPerspective" label="Java"/>
 <alwaysOnActionSet id="org.eclipse.egit.ui.navigation"/>
@@ -176,9 +154,9 @@
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
 <view id="org.eclipse.jdt.ui.PackageExplorer"/>
 <fastViewBars>
-<fastViewBar fastViewLocation="1024" id="bottom" orientation="256" selectedTabId="org.eclipse.ui.console.ConsoleView" style="0">
+<fastViewBar fastViewLocation="1024" id="bottom" orientation="256" selectedTabId="com.android.ide.eclipse.ddms.views.LogCatView" style="0">
 <fastViews>
-<view id="com.android.ide.eclipse.ddms.views.LogCatView" ratio="0.5766871"/>
+<view id="com.android.ide.eclipse.ddms.views.LogCatView" ratio="0.5756579"/>
 <view id="org.eclipse.ui.console.ConsoleView" ratio="0.2944079"/>
 </fastViews>
 </fastViewBar>
@@ -207,9 +185,9 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.3140244" ratioLeft="206" ratioRight="450" relationship="2" relative="left"/>
+<info part="org.eclipse.ui.editorss" ratio="0.3277439" ratioLeft="215" ratioRight="441" relationship="2" relative="left"/>
 <info folder="true" part="bottom" ratio="0.61787367" ratioLeft="401" ratioRight="248" relationship="4" relative="org.eclipse.ui.editorss">
-<folder appearance="2" expanded="0">
+<folder appearance="2" expanded="2">
 <page content="com.android.ide.eclipse.ddms.views.LogCatView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ProblemView" label="LabelNotFound"/>
@@ -334,10 +312,7 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ToDoList/src/apt/ToDoList/ToDoEditView.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ToDoList/src/apt/ToDoList/ToDoReadView.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ToDoList/src/apt/ToDoList/ToDoItemHelper.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" path="/ToDoList/AndroidManifest.xml"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" path="/LunchList/AndroidManifest.xml"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ToDoList/src/apt/ToDoList/ToDoEditView.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ToDoList/src/apt/ToDoList/ToDoItemHelper.java"/>
@@ -348,133 +323,136 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.xml.XmlEditor" path="/LunchList/res/xml/widget_provider.xml"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/LunchList/src/apt/tutorial/WidgetService.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.resources.ResourcesEditor" path="/LunchList/res/values/strings.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/LunchList/src/apt/tutorial/WidgetService.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" path="/LunchList/res/layout/widget.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" path="/LunchList/res/xml-v11/widget_provider.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.xml.XmlEditor" path="/LunchList/res/xml-v11/widget_provider.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" path="/LunchList/res/layout-v11/widget.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.PropertiesFileEditor" path="/LunchList/build.properties"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/LunchList/src/apt/tutorial/AppWidget.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/LunchList/src/apt/tutorial/ListWidgetService.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/LunchList/src/apt/tutorial/ListViewFactory.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/LunchList/src/apt/tutorial/ListViewsFactory.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" path="/LunchList/res/layout/widget_row.xml"/>
 </editors>
-<item historyLabel="ToDoItemHelper.java" index="2">
-<position info="not_deleted" x="2010" y="0"/>
-</item>
-<item historyLabel="ToDoEditView.java" index="0">
-<position info="not_deleted" x="490" y="0"/>
-</item>
-<item historyLabel="ToDoReadView.java" index="1">
-<position info="not_deleted" x="2933" y="0"/>
-</item>
-<item historyLabel="ToDoList Manifest" index="3"/>
-<item historyLabel="LunchList Manifest" index="4"/>
-<item historyLabel="ToDoList Manifest" index="3"/>
-<item historyLabel="ToDoReadView.java" index="1">
-<position info="not_deleted" x="2933" y="0"/>
-</item>
-<item historyLabel="ToDoEditView.java" index="5">
-<position info="not_deleted" x="406" y="0"/>
-</item>
-<item historyLabel="ToDoList Manifest" index="3"/>
-<item historyLabel="ToDoItemHelper.java" index="6">
-<position info="not_deleted" x="792" y="0"/>
-</item>
-<item historyLabel="ToDoReadView.java" index="1">
-<position info="not_deleted" x="146" y="8"/>
-</item>
-<item historyLabel="ToDoReadView.java" index="1">
-<position info="not_deleted" x="3220" y="0"/>
-</item>
-<item historyLabel="ToDoReadView.java" index="1">
-<position info="not_deleted" x="3257" y="0"/>
-</item>
-<item historyLabel="ToDoReadView.java" index="1">
-<position info="not_deleted" x="3280" y="0"/>
-</item>
-<item historyLabel="ToDoReadView.java" index="1">
-<position info="not_deleted" x="3294" y="0"/>
-</item>
-<item historyLabel="ToDoReadView.java" index="1">
-<position info="not_deleted" x="3573" y="0"/>
-</item>
-<item historyLabel="ToDoItemHelper.java" index="6">
-<position info="not_deleted" x="1104" y="0"/>
-</item>
-<item historyLabel="ToDoReadView.java" index="1">
-<position info="not_deleted" x="3573" y="0"/>
-</item>
-<item historyLabel="ToDoReadView.java" index="1">
-<position info="not_deleted" x="3509" y="0"/>
-</item>
-<item historyLabel="ToDoReadView.java" index="1">
-<position info="not_deleted" x="3573" y="0"/>
-</item>
-<item historyLabel="ToDoItemHelper.java" index="6">
-<position info="not_deleted" x="2234" y="0"/>
-</item>
-<item historyLabel="ToDoReadView.java" index="1">
-<position info="not_deleted" x="3296" y="0"/>
-</item>
-<item historyLabel="option.xml" index="7"/>
-<item historyLabel="ToDoReadView.java" index="1">
+<item historyLabel="option.xml" index="4"/>
+<item historyLabel="ToDoReadView.java" index="0">
 <position info="not_deleted" x="2696" y="0"/>
 </item>
-<item historyLabel="option.xml" index="7"/>
-<item historyLabel="ToDoReadView.java" index="1">
+<item historyLabel="option.xml" index="4"/>
+<item historyLabel="ToDoReadView.java" index="0">
 <position info="not_deleted" x="2696" y="0"/>
 </item>
-<item historyLabel="ToDoReadView.java" index="1">
+<item historyLabel="ToDoReadView.java" index="0">
 <position info="not_deleted" x="358" y="0"/>
 </item>
-<item historyLabel="ToDoEditView.java" index="5">
+<item historyLabel="ToDoEditView.java" index="2">
 <position/>
 </item>
-<item historyLabel="ToDoItemHelper.java" index="6">
+<item historyLabel="ToDoItemHelper.java" index="3">
 <position info="not_deleted" x="2591" y="0"/>
 </item>
-<item historyLabel="ToDoReadView.java" index="1">
+<item historyLabel="ToDoReadView.java" index="0">
 <position info="not_deleted" x="3473" y="0"/>
 </item>
-<item historyLabel="ToDoItemHelper.java" index="6">
+<item historyLabel="ToDoItemHelper.java" index="3">
 <position info="not_deleted" x="2665" y="0"/>
 </item>
-<item historyLabel="ToDoEditView.java" index="5">
+<item historyLabel="ToDoEditView.java" index="2">
 <position info="not_deleted" x="137" y="0"/>
 </item>
-<item historyLabel="ToDoReadView.java" index="1">
+<item historyLabel="ToDoReadView.java" index="0">
 <position info="not_deleted" x="3473" y="0"/>
 </item>
-<item historyLabel="ToDoReadView.java" index="1">
+<item historyLabel="ToDoReadView.java" index="0">
 <position info="not_deleted" x="1593" y="0"/>
 </item>
-<item historyLabel="ToDoReadView.java" index="1">
+<item historyLabel="ToDoReadView.java" index="0">
 <position info="not_deleted" x="2073" y="0"/>
 </item>
-<item historyLabel="option.xml" index="7"/>
-<item historyLabel="ToDoReadView.java" index="1">
+<item historyLabel="option.xml" index="4"/>
+<item historyLabel="ToDoReadView.java" index="0">
 <position info="not_deleted" x="2403" y="0"/>
 </item>
-<item historyLabel="ToDoReadView.java" index="1">
+<item historyLabel="ToDoReadView.java" index="0">
 <position info="not_deleted" x="2093" y="0"/>
 </item>
-<item historyLabel="ToDoReadView.java" index="1">
+<item historyLabel="ToDoReadView.java" index="0">
 <position info="not_deleted" x="2088" y="0"/>
 </item>
-<item historyLabel="ToDoReadView.java" index="1">
+<item historyLabel="ToDoReadView.java" index="0">
 <position info="not_deleted" x="2000" y="0"/>
 </item>
-<item historyLabel="widget.xml" index="8"/>
-<item historyLabel="AppWidget.java" index="9">
+<item historyLabel="widget.xml" index="5"/>
+<item historyLabel="AppWidget.java" index="6">
 <position info="not_deleted" x="400" y="0"/>
 </item>
-<item historyLabel="widget_provider.xml" index="10">
+<item historyLabel="widget_provider.xml" index="7">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="widget_provider.xml" index="11"/>
-<item historyLabel="AppWidget.java" index="9">
+<item historyLabel="widget_provider.xml" index="8"/>
+<item historyLabel="AppWidget.java" index="6">
 <position info="not_deleted" x="400" y="0"/>
 </item>
-<item historyLabel="LunchList Manifest" index="4"/>
-<item historyLabel="AppWidget.java" index="9">
+<item historyLabel="LunchList Manifest" index="1"/>
+<item historyLabel="AppWidget.java" index="6">
 <position info="not_deleted" x="400" y="0"/>
 </item>
-<item historyLabel="WidgetService.java" index="12">
+<item historyLabel="WidgetService.java" index="9">
 <position info="not_deleted" x="1704" y="0"/>
 </item>
-<item historyLabel="strings.xml" index="13"/>
-<item active="true" historyLabel="LunchList Manifest" index="4"/>
+<item historyLabel="strings.xml" index="10"/>
+<item historyLabel="LunchList Manifest" index="1"/>
+<item historyLabel="WidgetService.java" index="11">
+<position info="not_deleted" x="1704" y="0"/>
+</item>
+<item historyLabel="LunchList Manifest" index="1"/>
+<item historyLabel="widget.xml" index="12"/>
+<item historyLabel="widget_provider.xml" index="13">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="widget_provider.xml" index="14"/>
+<item historyLabel="widget.xml" index="15"/>
+<item historyLabel="build.properties" index="16">
+<position info="not_deleted" x="863" y="0"/>
+</item>
+<item historyLabel="AppWidget.java" index="17">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="AppWidget.java" index="17">
+<position info="not_deleted" x="570" y="0"/>
+</item>
+<item historyLabel="ListWidgetService.java" index="18">
+<position info="not_deleted" x="321" y="0"/>
+</item>
+<item historyLabel="AppWidget.java" index="17">
+<position info="not_deleted" x="498" y="0"/>
+</item>
+<item historyLabel="ListWidgetService.java" index="18">
+<position info="not_deleted" x="321" y="0"/>
+</item>
+<item historyLabel="AppWidget.java" index="17">
+<position info="not_deleted" x="498" y="0"/>
+</item>
+<item historyLabel="ListWidgetService.java" index="18">
+<position info="not_deleted" x="98" y="0"/>
+</item>
+<item historyLabel="LunchList Manifest" index="1"/>
+<item historyLabel="ListViewFactory.java" index="19">
+<position info="not_deleted" x="1899" y="0"/>
+</item>
+<item historyLabel="ListViewsFactory.java" index="20">
+<position info="not_deleted" x="639" y="0"/>
+</item>
+<item historyLabel="ListViewsFactory.java" index="20">
+<position info="not_deleted" x="666" y="0"/>
+</item>
+<item historyLabel="ListViewsFactory.java" index="20">
+<position info="not_deleted" x="2033" y="0"/>
+</item>
+<item historyLabel="widget_row.xml" index="21"/>
+<item historyLabel="widget_provider.xml" index="14"/>
+<item active="true" historyLabel="widget_provider.xml" index="14"/>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
@@ -493,8 +471,29 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.xml.XmlEditor" name="widget_provider.xml" tooltip="LunchList/res/xml-v11/widget_provider.xml">
+<persistable path="/LunchList/res/xml-v11/widget_provider.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="widget_row.xml" tooltip="LunchList/res/layout/widget_row.xml">
+<persistable path="/LunchList/res/layout/widget_row.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ListViewFactory.java" tooltip="LunchList/src/apt/tutorial/ListViewFactory.java">
+<persistable path="/LunchList/src/apt/tutorial/ListViewFactory.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" name="AndroidManifest.xml" tooltip="LunchList/AndroidManifest.xml">
 <persistable path="/LunchList/AndroidManifest.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ListWidgetService.java" tooltip="LunchList/src/apt/tutorial/ListWidgetService.java">
+<persistable path="/LunchList/src/apt/tutorial/ListWidgetService.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AppWidget.java" tooltip="LunchList/src/apt/tutorial/AppWidget.java">
+<persistable path="/LunchList/src/apt/tutorial/AppWidget.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.PropertiesFileEditor" name="build.properties" tooltip="LunchList/build.properties">
+<persistable path="/LunchList/build.properties"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="widget.xml" tooltip="LunchList/res/layout-v11/widget.xml">
+<persistable path="/LunchList/res/layout-v11/widget.xml"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.resources.ResourcesEditor" name="strings.xml" tooltip="LunchList/res/values/strings.xml">
 <persistable path="/LunchList/res/values/strings.xml"/>
@@ -504,9 +503,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.xml.XmlEditor" name="widget_provider.xml" tooltip="LunchList/res/xml/widget_provider.xml">
 <persistable path="/LunchList/res/xml/widget_provider.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AppWidget.java" tooltip="LunchList/src/apt/tutorial/AppWidget.java">
-<persistable path="/LunchList/src/apt/tutorial/AppWidget.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="widget.xml" tooltip="LunchList/res/layout/widget.xml">
 <persistable path="/LunchList/res/layout/widget.xml"/>
@@ -519,24 +515,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LunchList.java" tooltip="LunchList/src/apt/tutorial/LunchList.java">
 <persistable path="/LunchList/src/apt/tutorial/LunchList.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ToDoItemHelper.java" tooltip="ToDoList/src/apt/ToDoList/ToDoItemHelper.java">
-<persistable path="/ToDoList/src/apt/ToDoList/ToDoItemHelper.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DetailForm.java" tooltip="LunchList/src/apt/tutorial/DetailForm.java">
-<persistable path="/LunchList/src/apt/tutorial/DetailForm.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="main.xml" tooltip="ToDoList/res/layout/main.xml">
-<persistable path="/ToDoList/res/layout/main.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ToDoReadView.java" tooltip="ToDoList/src/apt/ToDoList/ToDoReadView.java">
-<persistable path="/ToDoList/src/apt/ToDoList/ToDoReadView.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="edit_form.xml" tooltip="ToDoList/res/layout/edit_form.xml">
-<persistable path="/ToDoList/res/layout/edit_form.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="R.java" tooltip="ToDoList/gen/apt/ToDoList/R.java">
-<persistable path="/ToDoList/gen/apt/ToDoList/R.java"/>
 </file>
 </mruList>
 </workbench>
