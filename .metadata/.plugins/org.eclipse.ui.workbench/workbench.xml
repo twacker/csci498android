@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="31" version="2.0">
+<workbench progressCount="32" version="2.0">
 <workbenchAdvisor/>
 <window height="728" width="683" x="0" y="0">
 <fastViewData fastViewLocation="1024"/>
@@ -16,7 +16,7 @@
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="129" y="22"/>
 <coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="76" y="22"/>
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="122" y="22"/>
-<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="61" y="22"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="130" y="22"/>
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="61" y="22"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
@@ -27,7 +27,7 @@
 <coolItem id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="com.android.ide.eclipse.editors.layout.LayoutEditor" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.PropertiesFileEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
@@ -39,12 +39,18 @@
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
+<part id="1"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="com.android.ide.eclipse.editors.xml.XmlEditor" name="widget_provider.xml" partName="widget_provider.xml" path="C:/Users/Dale Anderson/Documents/GitHub/csci498android/LunchList/res/xml-v11/widget_provider.xml" title="widget_provider.xml" tooltip="LunchList/res/xml-v11/widget_provider.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/LunchList/res/xml-v11/widget_provider.xml"/>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LunchFragment.java" partName="LunchFragment.java" path="C:/Users/Dale Anderson/Documents/GitHub/csci498android/LunchList/src/apt/tutorial/LunchFragment.java" title="LunchFragment.java" tooltip="LunchList/src/apt/tutorial/LunchFragment.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/LunchList/src/apt/tutorial/LunchFragment.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="114" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LunchList.java" partName="LunchList.java" path="C:/Users/Dale Anderson/Documents/GitHub/csci498android/LunchList/src/apt/tutorial/LunchList.java" title="LunchList.java" tooltip="LunchList/src/apt/tutorial/LunchList.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/LunchList/src/apt/tutorial/LunchList.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="3764" selectionOffset="0" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -84,7 +90,7 @@
 </viewState>
 </view>
 </views>
-<perspectives activePart="com.android.ide.eclipse.editors.xml.XmlEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
+<perspectives activePart="org.eclipse.jdt.ui.PackageExplorer" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.jdt.internal.ui.JavaPerspectiveFactory" id="org.eclipse.jdt.ui.JavaPerspective" label="Java"/>
 <alwaysOnActionSet id="org.eclipse.egit.ui.navigation"/>
@@ -154,7 +160,7 @@
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
 <view id="org.eclipse.jdt.ui.PackageExplorer"/>
 <fastViewBars>
-<fastViewBar fastViewLocation="1024" id="bottom" orientation="256" selectedTabId="com.android.ide.eclipse.ddms.views.LogCatView" style="0">
+<fastViewBar fastViewLocation="1024" id="bottom" orientation="256" selectedTabId="org.eclipse.ui.console.ConsoleView" style="0">
 <fastViews>
 <view id="com.android.ide.eclipse.ddms.views.LogCatView" ratio="0.5756579"/>
 <view id="org.eclipse.ui.console.ConsoleView" ratio="0.2944079"/>
@@ -334,18 +340,11 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/LunchList/src/apt/tutorial/ListViewFactory.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/LunchList/src/apt/tutorial/ListViewsFactory.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" path="/LunchList/res/layout/widget_row.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" path="/LunchList/AndroidManifest.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.menu.MenuEditor" path="/LunchList/res/menu/option.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/LunchList/src/apt/tutorial/LunchFragment.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/LunchList/src/apt/tutorial/LunchList.java"/>
 </editors>
-<item historyLabel="option.xml" index="4"/>
-<item historyLabel="ToDoReadView.java" index="0">
-<position info="not_deleted" x="2696" y="0"/>
-</item>
-<item historyLabel="option.xml" index="4"/>
-<item historyLabel="ToDoReadView.java" index="0">
-<position info="not_deleted" x="2696" y="0"/>
-</item>
-<item historyLabel="ToDoReadView.java" index="0">
-<position info="not_deleted" x="358" y="0"/>
-</item>
 <item historyLabel="ToDoEditView.java" index="2">
 <position/>
 </item>
@@ -452,7 +451,18 @@
 </item>
 <item historyLabel="widget_row.xml" index="21"/>
 <item historyLabel="widget_provider.xml" index="14"/>
-<item active="true" historyLabel="widget_provider.xml" index="14"/>
+<item historyLabel="widget_provider.xml" index="14"/>
+<item historyLabel="LunchList Manifest" index="22"/>
+<item historyLabel="option.xml" index="23"/>
+<item historyLabel="LunchFragment.java" index="24">
+<position info="not_deleted" x="3990" y="0"/>
+</item>
+<item historyLabel="LunchList.java" index="25">
+<position info="not_deleted" x="0" y="3764"/>
+</item>
+<item active="true" historyLabel="LunchFragment.java" index="24">
+<position info="not_deleted" x="3990" y="0"/>
+</item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
@@ -471,6 +481,18 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LunchList.java" tooltip="LunchList/src/apt/tutorial/LunchList.java">
+<persistable path="/LunchList/src/apt/tutorial/LunchList.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LunchFragment.java" tooltip="LunchList/src/apt/tutorial/LunchFragment.java">
+<persistable path="/LunchList/src/apt/tutorial/LunchFragment.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.menu.MenuEditor" name="option.xml" tooltip="LunchList/res/menu/option.xml">
+<persistable path="/LunchList/res/menu/option.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" name="AndroidManifest.xml" tooltip="LunchList/AndroidManifest.xml">
+<persistable path="/LunchList/AndroidManifest.xml"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.xml.XmlEditor" name="widget_provider.xml" tooltip="LunchList/res/xml-v11/widget_provider.xml">
 <persistable path="/LunchList/res/xml-v11/widget_provider.xml"/>
 </file>
@@ -479,9 +501,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ListViewFactory.java" tooltip="LunchList/src/apt/tutorial/ListViewFactory.java">
 <persistable path="/LunchList/src/apt/tutorial/ListViewFactory.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" name="AndroidManifest.xml" tooltip="LunchList/AndroidManifest.xml">
-<persistable path="/LunchList/AndroidManifest.xml"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ListWidgetService.java" tooltip="LunchList/src/apt/tutorial/ListWidgetService.java">
 <persistable path="/LunchList/src/apt/tutorial/ListWidgetService.java"/>
@@ -506,15 +525,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="widget.xml" tooltip="LunchList/res/layout/widget.xml">
 <persistable path="/LunchList/res/layout/widget.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.menu.MenuEditor" name="option.xml" tooltip="ToDoList/res/menu/option.xml">
-<persistable path="/ToDoList/res/menu/option.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" name="AndroidManifest.xml" tooltip="ToDoList/AndroidManifest.xml">
-<persistable path="/ToDoList/AndroidManifest.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LunchList.java" tooltip="LunchList/src/apt/tutorial/LunchList.java">
-<persistable path="/LunchList/src/apt/tutorial/LunchList.java"/>
 </file>
 </mruList>
 </workbench>
