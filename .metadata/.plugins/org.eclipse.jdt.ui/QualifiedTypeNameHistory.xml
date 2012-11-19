@@ -39,7 +39,7 @@
 <fullyQualifiedTypeName name="android.widget.Button"/>
 <fullyQualifiedTypeName name="android.view.View"/>
 <fullyQualifiedTypeName name="android.view.View.OnClickListener"/>
-<fullyQualifiedTypeName name="apt.ToDoList.R.id"/>
 <fullyQualifiedTypeName name="android.os.Build"/>
 <fullyQualifiedTypeName name="android.os.Build.VERSION_CODES"/>
+<fullyQualifiedTypeName name="apt.ToDoList.R.id"/>
 </qualifiedTypeNameHistroy>
