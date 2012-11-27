@@ -3,7 +3,6 @@ package apt.tutorial;
 import android.app.*;
 import android.content.Intent;
 import android.os.*;
-import android.util.Log;
 import android.view.*;
 import android.widget.*;
 import org.mcsoxford.rss.*;
@@ -25,8 +24,8 @@ public class FeedActivity extends ListActivity {
 
 			i.putExtra( FeedService.EXTRA_URL, getIntent().getStringExtra( FEED_URL ) );
 			i.putExtra( FeedService.EXTRA_MESSENGER, new Messenger( state.handler ) );
-			
-			startService(i);
+
+			startService( i );
 		} else {
 			if ( state.handler != null ) {
 				state.handler.attach( this );
@@ -42,7 +41,7 @@ public class FeedActivity extends ListActivity {
 		if ( state.handler != null ) {
 			state.handler.detach();
 		}
-		return( state );
+		return state;
 	}
 
 	private void setFeed( RSSFeed feed ) {
@@ -52,7 +51,6 @@ public class FeedActivity extends ListActivity {
 
 	private void goBlooey( Throwable t ) {
 		AlertDialog.Builder builder = new AlertDialog.Builder( this );
-
 		builder.setTitle( "@string/except" ).setMessage( t.toString() ).setPositiveButton( "OK", null ).show();
 	}
 
@@ -62,6 +60,7 @@ public class FeedActivity extends ListActivity {
 	}
 
 	private static class FeedHandler extends Handler {
+
 		FeedActivity activity = null;
 
 		FeedHandler( FeedActivity activity ) {
@@ -84,6 +83,7 @@ public class FeedActivity extends ListActivity {
 				activity.goBlooey( ( Exception ) msg.obj );
 			}
 		}
+
 	}
 
 	private class FeedAdapter extends BaseAdapter {
@@ -95,15 +95,15 @@ public class FeedActivity extends ListActivity {
 		}
 
 		public int getCount() {
-			return( feed.getItems().size() );
+			return feed.getItems().size();
 		}
 
 		public Object getItem( int position ) {
-			return( feed.getItems().get( position ) );
+			return feed.getItems().get( position );
 		}
 
 		public long getItemId( int position ) {
-			return( position );
+			return position;
 		}
 
 		public View getView( int position, View convertView, ViewGroup parent ) {
@@ -114,7 +114,7 @@ public class FeedActivity extends ListActivity {
 			}
 			RSSItem item = ( RSSItem ) getItem( position );
 			( ( TextView ) row ).setText( item.getTitle() );
-			return( row );
+			return row;
 		}
 	}
 

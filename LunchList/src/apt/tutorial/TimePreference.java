@@ -8,10 +8,12 @@ import android.view.View;
 import android.widget.TimePicker;
 
 public class TimePreference extends DialogPreference {
-	
+
 	private int lastHour = 0;
 	private int lastMinute = 0;
 	private TimePicker picker = null;
+
+	private String defaultTime = "00:00";
 
 	public static int getHour( String time ) {
 		String[] pieces = time.split( ":" );
@@ -57,7 +59,7 @@ public class TimePreference extends DialogPreference {
 
 	@Override
 	protected Object onGetDefaultValue( TypedArray a, int index ) {
-		return( a.getString( index ) );
+		return a.getString( index );
 	}
 
 	@Override
@@ -65,7 +67,7 @@ public class TimePreference extends DialogPreference {
 		String time = null;
 		if ( restoreValue ) {
 			if ( defaultValue == null ) {
-				time = getPersistedString( "00:00" );
+				time = getPersistedString( defaultTime );
 			} else {
 				time = getPersistedString( defaultValue.toString() );
 			}
@@ -75,5 +77,5 @@ public class TimePreference extends DialogPreference {
 		lastHour = getHour( time );
 		lastMinute = getMinute( time );
 	}
-	
+
 }

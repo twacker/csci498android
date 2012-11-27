@@ -10,6 +10,7 @@ import android.preference.PreferenceManager;
 import java.util.Calendar;
 
 public class OnBootReceiver extends BroadcastReceiver {
+	
 	public static void setAlarm( Context ctxt ) {
 		AlarmManager mgr = ( AlarmManager ) ctxt.getSystemService( Context.ALARM_SERVICE );
 		Calendar cal = Calendar.getInstance();
@@ -32,11 +33,12 @@ public class OnBootReceiver extends BroadcastReceiver {
 
 	private static PendingIntent getPendingIntent( Context ctxt ) {
 		Intent i = new Intent( ctxt, OnAlarmReceiver.class );
-		return( PendingIntent.getBroadcast( ctxt, 0, i, 0 ) );
+		return PendingIntent.getBroadcast( ctxt, 0, i, 0 ) ;
 	}
 
 	@Override
 	public void onReceive( Context ctxt, Intent intent ) {
 		setAlarm( ctxt );
 	}
+	
 }

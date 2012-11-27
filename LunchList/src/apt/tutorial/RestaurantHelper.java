@@ -5,8 +5,18 @@ import android.database.*;
 import android.database.sqlite.*;
 
 class RestaurantHelper extends SQLiteOpenHelper {
+
 	private static final String DATABASE_NAME = "lunchlist.db";
 	private static final int SCHEMA_VERSION = 4;
+
+	private String dropTable = "DROP TABLE IF EXISTS " + DATABASE_NAME;
+	private String createTable = "CREATE TABLE restaurants (_id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, address TEXT, type TEXT, notes TEXT, feed TEXT, lat REAL, lon REAL, phone TEXT);";
+	private String getById = "SELECT _id, name, address, type, notes, feed, lat, lon, phone FROM restaurants WHERE _id=?";
+	private String getAll = "SELECT _id, name, address, type, notes, lat, lon, phone FROM restaurants ORDER BY ";
+	private String alterFeed = "ALTER TABLE restaurants ADD COLUMN feed TEXT";
+	private String alterLat = "ALTER TABLE restaurants ADD COLUMN lat REAL";
+	private String alterLon = "ALTER TABLE restaurants ADD COLUMN lon REAL";
+	private String alterPhone = "ALTER TABLE restaurants ADD COLUMN phone TEXT";
 
 	public RestaurantHelper( Context context ) {
 		super( context, DATABASE_NAME, null, SCHEMA_VERSION );
@@ -14,8 +24,8 @@ class RestaurantHelper extends SQLiteOpenHelper {
 
 	@Override
 	public void onCreate( SQLiteDatabase db ) {
-		db.execSQL( "DROP TABLE IF EXISTS " + DATABASE_NAME );
-		db.execSQL( "CREATE TABLE restaurants (_id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, address TEXT, type TEXT, notes TEXT, feed TEXT, lat REAL, lon REAL, phone TEXT);" );
+		db.execSQL( dropTable );
+		db.execSQL( createTable );
 	}
 
 	@Override
@@ -24,12 +34,12 @@ class RestaurantHelper extends SQLiteOpenHelper {
 		case 0 :
 		case 1 :
 		case 2 :
-			db.execSQL( "ALTER TABLE restaurants ADD COLUMN feed TEXT" );
+			db.execSQL( alterFeed );
 		case 3 :
-			db.execSQL( "ALTER TABLE restaurants ADD COLUMN lat REAL" );
-			db.execSQL( "ALTER TABLE restaurants ADD COLUMN lon REAL" );
+			db.execSQL( alterLat );
+			db.execSQL( alterLon );
 		case 4 :
-			db.execSQL( "ALTER TABLE restaurants ADD COLUMN phone TEXT" );
+			db.execSQL( alterPhone );
 		default :
 			// do nothing
 			break;
@@ -50,13 +60,12 @@ class RestaurantHelper extends SQLiteOpenHelper {
 	}
 
 	public Cursor getAll( String orderBy ) {
-		// DO NOT end the query string with ; (looked up on docs)
-		return getReadableDatabase().rawQuery( "SELECT _id, name, address, type, notes, lat, lon, phone FROM restaurants ORDER BY " + orderBy, null );
+		return getReadableDatabase().rawQuery( getAll + orderBy, null );
 	}
 
 	public Cursor getById( String id ) {
 		String[] args = { id };
-		return getReadableDatabase().rawQuery( "SELECT _id, name, address, type, notes, feed, lat, lon, phone FROM restaurants WHERE _id=?", args );
+		return getReadableDatabase().rawQuery( getById, args );
 	}
 
 	public String getName( Cursor c ) {
@@ -111,7 +120,6 @@ class RestaurantHelper extends SQLiteOpenHelper {
 		cv.put( "phone", phone );
 
 		getWritableDatabase().update( "restaurants", cv, "_ID=?", args );
-
 	}
 
 }

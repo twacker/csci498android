@@ -7,10 +7,11 @@ import android.widget.*;
 
 public class RestaurantMap extends MapActivity {
 
+	private MapView map = null;
+
 	public static final String EXTRA_LATITUDE = "apt.tutorial.EXTRA_LATITUDE";
 	public static final String EXTRA_LONGITUDE = "apt.tutorial.EXTRA_LONGITUDE";
 	public static final String EXTRA_NAME = "apt.tutorial.EXTRA_NAME";
-	private MapView map = null;
 
 	@Override
 	public void onCreate( Bundle savedInstanceState ) {
@@ -33,7 +34,7 @@ public class RestaurantMap extends MapActivity {
 
 	@Override
 	protected boolean isRouteDisplayed() {
-		return( false );
+		return false;
 	}
 
 	private class RestaurantOverlay extends ItemizedOverlay< OverlayItem > {
@@ -48,18 +49,18 @@ public class RestaurantMap extends MapActivity {
 
 		@Override
 		protected OverlayItem createItem( int i ) {
-			return( item );
+			return item;
 		}
 
 		@Override
 		public int size() {
-			return( 1 );
+			return 1;
 		}
 
 		@Override
 		protected boolean onTap( int i ) {
 			Toast.makeText( RestaurantMap.this, item.getSnippet(), Toast.LENGTH_SHORT ).show();
-			return( true );
+			return true;
 		}
 	}
 

@@ -7,6 +7,7 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v4.app.FragmentManager;
 
 public class LunchList extends FragmentActivity implements LunchFragment.OnRestaurantListener {
+
 	public final static String ID_EXTRA = "apt.tutorial._ID";
 
 	@Override
@@ -34,4 +35,5 @@ public class LunchList extends FragmentActivity implements LunchFragment.OnResta
 			}
 		}
 	}
+
 }
